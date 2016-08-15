@@ -1,0 +1,4 @@
+.default {
+  composes: red from 'pw-base-css/colors.css';
+  background-color: red;
+}
