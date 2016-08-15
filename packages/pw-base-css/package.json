@@ -1,0 +1,8 @@
+{
+  "name": "pw-base-css",
+  "description": "Planswell Base CSS",
+  "version": "0.0.1",
+  "main": "index.js",
+  "author": "Paul Iannazzo <piannazzo@planswell.ca>",
+  "license": "MIT"
+}
