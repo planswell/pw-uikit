@@ -7,6 +7,7 @@ const webpack = require('webpack');
 const modules = [
   'app',
   'node_modules',
+  'packages',
 ];
 
 module.exports = {
