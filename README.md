@@ -8,6 +8,9 @@ development and testing. The key differences with CloudFlare's implementation ar
  * CSS Modules support
  * Test via mocha & enzyme (same as pw-react)
 
+## Running/Building
+To get the CSS working correctly you need to run `npm run lerna:bootstrap`
+
 ## Development
 
 The development environment is [React Storybook](https://github.com/kadirahq/react-storybook). Run `npm start` to

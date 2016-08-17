@@ -9,6 +9,7 @@
   "author": "Paul Iannazzo <piannazzo@planswell.ca>",
   "license": "MIT",
   "scripts": {
+    "lerna:bootstrap": "node node_modules/lerna/bin/lerna.js bootstrap",
     "start": "npm run storybook",
     "storybook": "start-storybook -p 9000",
     "lint": "npm run lint:js && npm run lint:css",
@@ -168,6 +169,7 @@
     "karma-safari-launcher": "1.0.0",
     "karma-sourcemap-loader": "0.3.7",
     "karma-webpack": "1.8.0",
+    "lerna": "https://github.com/boxxxie/lerna/tarball/build",
     "lint-staged": "2.0.3",
     "minimist": "1.2.0",
     "mocha": "3.0.2",
