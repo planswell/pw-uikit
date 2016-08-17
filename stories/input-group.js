@@ -1,11 +1,14 @@
 import React from 'react';
 import { storiesOf } from '@kadira/storybook';
-import { Button } from './../packages/pw-component-button';
+import { Input, InputGroup } from './../packages/pw-component-input';
 import { Container } from './../packages/pw-container';
 
-storiesOf('Button', module)
+storiesOf('InputGroup', module)
   .add('with text', () => (
     <Container>
-      <Button>Test</Button>
+      <InputGroup>
+        <Input />
+        <Input />
+      </InputGroup>
     </Container>
   ));

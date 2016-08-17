@@ -1,0 +1,15 @@
+{
+  "name": "pw-container",
+  "description": "Planswell Container",
+  "version": "0.0.1",
+  "main": "lib/index.js",
+  "author": "Paul Iannazzo <piannazzo@planswell.ca>",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^15.3.0",
+    "pw-base-css": "0.0.1"
+  },
+  "devDependencies": {
+    "react-dom": "^15.3.0"
+  }
+}

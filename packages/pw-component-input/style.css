@@ -1,0 +1,85 @@
+@font-face {
+  font-family: FontAwesome;
+  src: url('https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/fonts/fontawesome-webfont.eot?v=4.6.3');
+  src: url('https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/fonts/fontawesome-webfont.eot?#iefix&v=4.6.3') format('embedded-opentype'), url('https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/fonts/fonts/fontawesome-webfont.woff2?v=4.6.3') format('woff2'), url('https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/fonts/fontawesome-webfont.woff?v=4.6.3') format('woff'), url('https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/fonts/fontawesome-webfont.ttf?v=4.6.3') format('truetype'), url('https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/fonts/fontawesome-webfont.svg?v=4.6.3#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.default {
+  composes: form-control from 'bootstrap-css/lib/forms.css';
+  margin: initial;
+  padding: 0 16px;
+}
+
+.addon {
+  composes: input-group from 'bootstrap-css/lib/input-groups.css';
+}
+
+.addon .default:first-child {
+  border-right-style: none;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.addon-awesome {
+  composes: input-group-addon from 'bootstrap-css/lib/input-groups.css';
+  padding-left: 3em;
+  background: transparent;
+  cursor: pointer;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* Internet Explorer/Edge */
+  user-select: none;           /* Non-prefixed version, currently
+                                  not supported by any browser */
+}
+
+.addon-awesome::before {
+  font: normal normal normal 16px/1 FontAwesome;
+  padding-right: 5px;
+}
+
+.addon-password-hiding {
+  composes: addon-awesome;
+}
+
+.addon-password-hiding::before {
+  content: '\f1db';
+  color: #BBB;
+}
+
+.addon-password-showing {
+  composes: addon-awesome;
+}
+
+.addon-password-showing::before {
+  content: '\f058';
+  color: #E6B44B;
+}
+
+.group {
+  margin-bottom: 10px;
+}
+
+.group .default {
+  margin-bottom: 10px;
+  border-radius: 0;
+  margin-bottom: 0;
+}
+
+.group .default:not(:last-child) {
+  border-bottom-color: transparent;
+}
+
+.group .default:first-child {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.group .default:last-child {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  top: -2px;
+}
