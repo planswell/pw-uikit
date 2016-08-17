@@ -2,7 +2,7 @@ import React, { PropTypes } from 'react';
 import cssModules from 'react-css-modules';
 import styles from './style.css';
 
-class Button extends React.Component {
+class NativeButton extends React.Component {
   static propTypes = {
     children: PropTypes.array,
     onClick: PropTypes.func.isRequired,
@@ -42,5 +42,5 @@ class Button extends React.Component {
     );
   }
 }
-
-export default cssModules(Button, styles);
+const Button = cssModules(NativeButton, styles);
+export { Button };
