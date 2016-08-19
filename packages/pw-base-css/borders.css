@@ -1,0 +1,10 @@
+@import './vars.css';
+
+.default-radius {
+  border-radius: 0.4rem;
+}
+
+.default {
+  border: 0.1rem solid;
+  border-color: var(--greyFeatureColor;);
+}
