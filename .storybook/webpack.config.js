@@ -5,6 +5,7 @@ const cssnext = require('postcss-cssnext');
 const postcssFocus = require('postcss-focus');
 const postcssReporter = require('postcss-reporter');
 const postcssFlexbox = require('postcss-flexbox');
+const postcssImport = require('postcss-import');
 
 module.exports = {
   module: {
@@ -22,6 +23,7 @@ module.exports = {
   },
 
   postcss: () => ([
+    postcssImport(),
     postcssFocus(), // Add a :focus to every :hover
     cssnext({ // Allow future CSS features to be used, also auto-prefixes the CSS...
       browsers: ['last 2 versions', 'IE > 10'], // ...based on this browser list

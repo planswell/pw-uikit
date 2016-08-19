@@ -1,4 +1,67 @@
+@import 'pw-base-css/vars.css';
+
+.base {
+  composes: default from 'pw-base-css/typography.css';
+  composes: default from 'pw-base-css/borders.css';
+  composes: default-radius from 'pw-base-css/borders.css';
+  display: inline-block;
+  margin: initial;
+  font-weight: 600;
+  text-align: center;
+  line-height: 1;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  padding: var(--defaultPadding);
+  user-select: none;
+  transition: background-color 0.2s;
+}
+
 .default {
-  composes: red from 'pw-base-css/colors.css';
-  background-color: red;
+  composes: base;
+  color: var(--greyTypeColor);
+  background-color: var(--transparentColor);
+
+  &:active {
+    background-color: color(var(--transparentColor) shade(20%));
+  }
+
+  &:hover {
+    background-color: color(var(--transparentColor) tint(20%));
+  }
+
+  &:focus {
+    background-color: color(var(--transparentColor) tint(20%));
+  }
+
+  &:disabled {
+    color: color(var(--greyTypeColor) tint(40%));
+    background-color: color(var(--transparentColor) tint(40%));
+    cursor: not-allowed;
+  }
+}
+
+.primary {
+  composes: base;
+  color: var(--whiteTypeColor);
+  background-color: var(--blueFeatureColor);
+  border: none;
+
+  &:hover {
+    background-color: color(var(--blueFeatureColor) tint(20%));
+  }
+
+  &:focus {
+    background-color: color(var(--blueFeatureColor) tint(20%));
+  }
+
+  &:disabled {
+    background-color: color(var(--blueFeatureColor) tint(40%));
+    cursor: not-allowed;
+  }
+
+  &:active {
+    background-color: color(var(--blueFeatureColor) shade(20%));
+  }
 }

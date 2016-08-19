@@ -1,0 +1,8 @@
+@import './vars.css';
+
+.default {
+  white-space: nowrap;
+  font-size: calc(var(--phi) * 1rem);
+  line-height: var(--phi);
+  font-family: Larsseit-Bold;
+}
