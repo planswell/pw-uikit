@@ -4,14 +4,10 @@ import Button from './../packages/pw-component-button';
 
 storiesOf('Button', module)
   .add('default', () => (
-    <Button>Test</Button>
-  ))
+    <Button>Test</Button>))
   .add('default - disabled', () => (
-    <Button disabled>Test</Button>
-  ))
+    <Button disabled>Test</Button>))
   .add('primary', () => (
-    <Button type="primary">I love Phi</Button>
-  ))
+    <Button type="primary">I love Phi</Button>))
   .add('primary - disabled', () => (
-    <Button type="primary" disabled>Test</Button>
-  ));
+    <Button type="primary" disabled>Test</Button>));

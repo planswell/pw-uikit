@@ -113,6 +113,12 @@
   "stylelint": {
     "extends": "stylelint-config-standard",
     "rules": {
+      "unit-whitelist": [
+        "em",
+        "rem",
+        "%",
+        "s"
+      ],
       "color-hex-case": "upper",
       "string-quotes": "single",
       "font-family-name-quotes": "always-where-recommended",
@@ -124,12 +130,29 @@
           ]
         }
       ],
-      "indentation": 2
+      "selector-type-no-unknown": [
+        true,
+        {
+          "ignoreTypes": [
+            "/^--/"
+          ]
+        }
+      ],
+      "indentation": 2,
+      "at-rule-empty-line-before": [
+        "always",
+        {
+          "except": [
+            "all-nested"
+          ]
+        }
+      ]
     }
   },
   "dependencies": {
     "babel-polyfill": "6.13.0",
     "lodash": "4.15.0",
+    "postcss-font-awesome": "^0.3.4",
     "react": "15.3.0",
     "react-css-modules": "^3.7.10",
     "react-dom": "15.3.0",

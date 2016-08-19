@@ -1,0 +1,56 @@
+@import 'pw-base-css/vars.css';
+
+.base {
+  composes: default from 'pw-base-css/typography.css';
+  position: relative;
+  display: table;
+  @apply --default-border-and-radius;
+
+  border-collapse: separate;
+
+  & * {
+    border: 0;
+  }
+}
+
+/* awesome as in from font awesome */
+._addon-awesome {
+  display: table-cell;
+  white-space: nowrap;
+  vertical-align: middle;
+  height: 100%;
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1;
+  color: var(--greyTypeColor);
+  padding-top: 0.1rem; /* hack to make FontAwesome appears middle v-aligned due to font design issue. */
+  padding-left: var(--tinySpacing);
+  padding-right: var(--tinySpacing);
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+
+  &::before {
+    font-size: var(--phi)em; /* stylelint-disable-line */
+    padding-right: 0.5rem;
+    transition: color 0.1s;
+  }
+}
+
+.addon-password-hiding {
+  composes: _addon-awesome;
+
+  &::before {
+    font-awesome: circle-thin;
+    color: var(--lightBackgroundColor);
+  }
+}
+
+.addon-password-showing {
+  composes: _addon-awesome;
+
+  &::before {
+    font-awesome: check-circle;
+    color: var(--yellowFeatureColor);
+  }
+}

@@ -7,6 +7,7 @@ const postcssReporter = require('postcss-reporter');
 const postcssFlexbox = require('postcss-flexbox');
 const postcssImport = require('postcss-import');
 const postcssFontMagician = require('postcss-font-magician');
+const postcssFontAwesome = require('postcss-font-awesome');
 
 const fontAwesomeBaseUrl = 'https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/fonts/';
 const fontAwesomeConfig = {
@@ -54,5 +55,6 @@ module.exports = {
     }),
     postcssFlexbox,
     postcssFontMagician({ custom: fontAwesomeConfig }),
+    postcssFontAwesome,
   ]),
 };
