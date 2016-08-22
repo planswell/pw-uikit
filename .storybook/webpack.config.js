@@ -6,6 +6,27 @@ const postcssFocus = require('postcss-focus');
 const postcssReporter = require('postcss-reporter');
 const postcssFlexbox = require('postcss-flexbox');
 const postcssImport = require('postcss-import');
+const postcssFontMagician = require('postcss-font-magician');
+
+const fontAwesomeBaseUrl = 'https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/fonts/';
+const fontAwesomeConfig = {
+  FontAwesome: {
+    variants: {
+      normal: {
+        normal: {
+          url: {
+            eot: fontAwesomeBaseUrl + 'fontawesome-webfont.eot',
+            'embedded-opentype': fontAwesomeBaseUrl + 'fontawesome-webfont.eot?#iefix',
+            woff2: fontAwesomeBaseUrl + 'fontawesome-webfont.woff2',
+            woff: fontAwesomeBaseUrl + 'fontawesome-webfont.woff',
+            truetype: fontAwesomeBaseUrl + 'fontawesome-webfont.ttf',
+            svg: fontAwesomeBaseUrl + 'fontawesome-webfont.svg?v=4.6.3#fontawesomeregular',
+          },
+        },
+      },
+    },
+  },
+};
 
 module.exports = {
   module: {
@@ -32,5 +53,6 @@ module.exports = {
       clearMessages: true,
     }),
     postcssFlexbox,
+    postcssFontMagician({ custom: fontAwesomeConfig }),
   ]),
 };
