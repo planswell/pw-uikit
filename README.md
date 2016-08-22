@@ -11,6 +11,9 @@ development and testing. The key differences with CloudFlare's implementation ar
 ## Running/Building
 To get the CSS working correctly you need to run `npm run lerna:bootstrap`
 
+## React StoryBook Support
+ `npm run storybook`
+
 ## Development
 
 The development environment is [React Storybook](https://github.com/kadirahq/react-storybook). Run `npm start` to
