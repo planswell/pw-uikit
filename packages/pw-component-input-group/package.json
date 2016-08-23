@@ -1,14 +1,13 @@
 {
-  "name": "pw-component-input",
-  "description": "Planswell input Component",
+  "name": "pw-component-input-group",
+  "description": "Planswell Input Group Component",
   "version": "0.0.1",
-  "main": "index.js",
+  "main": "lib/index.js",
   "author": "Paul Iannazzo <piannazzo@planswell.ca>",
   "license": "MIT",
   "dependencies": {
-    "lodash": "^4.15.0",
-    "pw-base-css": "0.0.1",
-    "react": "^15.3.0"
+    "react": "^15.3.0",
+    "pw-base-css": "0.0.1"
   },
   "devDependencies": {
     "react-dom": "^15.3.0"
