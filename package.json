@@ -10,7 +10,7 @@
   "license": "MIT",
   "scripts": {
     "lerna:bootstrap": "node node_modules/lerna/bin/lerna.js bootstrap",
-    "start": "npm run storybook",
+    "start": "npm run lerna:bootstrap && npm run storybook",
     "storybook": "start-storybook -p 9000",
     "lint": "npm run lint:js && npm run lint:css",
     "lint:eslint": "eslint --ignore-path .gitignore --ignore-pattern internals/scripts",
