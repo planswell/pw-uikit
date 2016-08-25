@@ -3,28 +3,57 @@
   --pi: 3.1415926535897932384626433832;
   --tau: 6.283185307179586;
   --phi: 1.618033988749894848204586834;
+
+  /* colors */
+
   --transparentColor: transparent;
+  --greyColor: #93939E;
+  --lightGreyColor: #D0D2D3;
   --greenFeatureColor: #2EAA51;
   --blueFeatureColor: #0F84DB;
   --purpleFeatureColor: #8C50B2;
+  --yellowFeatureColor: #0F84DB;
   --redFeatureColor: #DF1765;
   --aquaFeatureColor: #00A2AD;
   --blackTypeColor: #282828;
-  --greyTypeColor: #93939E;
-  --greyFeatureColor: #93939E;
+  --greyTypeColor: var(--greyColor);
+  --placeholderTypeColor: var(--greyColor);
+  --greyFeatureColor: var(--greyColor);
+  --greyBoarderColor: var(--greyColor);
   --lightBackgroundColor: #F0F4F7;
   --whiteTypeColor: #FFF;
   --whiteBackgroundColor: #FFF;
+  --yellowBackgroundColor: #F6F4BF;
+
+  /* spacing */
+
   --tinySpacing: 0.8rem;
   --smallSpacing: 1.6rem;
   --defaultSpacing: 2.4rem;
   --largeSpacing: 4.8rem;
   --extraLargeSpacing: 6.4rem;
+
+  /* type */
+
   --typeTitle1Size: 5.6rem;
   --typeTitle2Size: 4.2rem;
   --typeTitle3Size: 3.2rem;
   --typeLargeSize: 2.8rem;
   --typeDefaultSize: 2.4rem;
   --typeSmallSize: 1.9rem;
+
+  /* other */
+
   --defaultPadding: var(--tinySpacing) var(--smallSpacing);
+  --defaultBorder: 0.1rem solid var(--lightGreyColor);
+  --defaultBorderRadius: 0.4rem;
+  --defaultInputHeight: 3.4rem;
+
+  --default-border-and-radius {
+    border: var(--defaultBorder);
+    border-radius: var(--defaultBorderRadius);
+  }
+
+  /* component defaults */
+  --placeholder-color: { &::placeholder { color: var(--placeholderTypeColor); } }
 }
