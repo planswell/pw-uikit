@@ -4,7 +4,10 @@ import styles from './style.css';
 
 class Button extends React.Component {
   static propTypes = {
-    children: PropTypes.array,
+    children: PropTypes.oneOfType([
+      PropTypes.arrayOf(PropTypes.node),
+      PropTypes.node,
+    ]),
     onClick: PropTypes.func.isRequired,
     submit: PropTypes.bool,
     type: PropTypes.oneOf([
@@ -19,6 +22,7 @@ class Button extends React.Component {
   };
 
   static defaultProps = {
+    onClick: () => {},
     type: 'default',
     submit: false,
   };
