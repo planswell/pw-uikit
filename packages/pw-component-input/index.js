@@ -1,6 +1,7 @@
 import React from 'react';
 import cssModules from 'react-css-modules';
-import styles from './style.css';
+import cssStyles from './style.css';
+import omit from 'lodash/omit';
 
 const { PropTypes } = React;
 
@@ -30,15 +31,15 @@ class Input extends React.Component {
   }
 
   render() {
-    const { name, value, placeholder, tabIndex, type } = this.props;
+    const passthroughProps = omit(this.props, 'styles');
     return (
       <input
+        {...passthroughProps}
         styleName="default"
         onChange={this.handleChange}
-        {...{ name, value, placeholder, tabIndex, type }}
       />
     );
   }
 }
 
-export default cssModules(Input, styles);
+export default cssModules(Input, cssStyles);

@@ -16,9 +16,10 @@
 /* awesome as in from font awesome */
 ._addon-awesome {
   display: table-cell;
+  height: 100%;
+  width: 6.1rem;
   white-space: nowrap;
   vertical-align: middle;
-  height: 100%;
   font-size: 1rem;
   font-weight: normal;
   line-height: 1;
