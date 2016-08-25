@@ -1,0 +1,7 @@
+@import 'pw-base-css/vars.css';
+
+.base {
+  composes: default from 'pw-base-css/typography.css';
+  composes: default from 'pw-base-css/borders.css';
+  composes: default-radius from 'pw-base-css/borders.css';
+}
