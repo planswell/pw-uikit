@@ -10,6 +10,7 @@
   "license": "MIT",
   "scripts": {
     "lerna:bootstrap": "node node_modules/lerna/bin/lerna.js bootstrap",
+    "lerna:clean": "node node_modules/lerna/bin/lerna.js clean",
     "start": "npm run lerna:bootstrap && npm run storybook",
     "storybook": "start-storybook -p 9000",
     "lint": "npm run lint:js && npm run lint:css",
