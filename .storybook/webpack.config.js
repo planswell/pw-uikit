@@ -4,7 +4,6 @@ const path = require('path');
 const cssnext = require('postcss-cssnext');
 const postcssFocus = require('postcss-focus');
 const postcssReporter = require('postcss-reporter');
-const postcssFlexbox = require('postcss-flexbox');
 const postcssImport = require('postcss-import');
 const postcssFontMagician = require('postcss-font-magician');
 const postcssFontAwesome = require('postcss-font-awesome');
@@ -53,7 +52,6 @@ module.exports = {
     postcssReporter({ // Posts messages from plugins to the terminal
       clearMessages: true,
     }),
-    postcssFlexbox,
     postcssFontMagician({ custom: fontAwesomeConfig }),
     postcssFontAwesome,
   ]),
