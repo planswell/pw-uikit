@@ -1,5 +1,5 @@
 {
-  "name": "pw-uikit",
+  "name": "@planswell/pw-uikit",
   "version": "0.0.1",
   "description": "A modular React components system that leverages CSS modules for styling.",
   "repository": {

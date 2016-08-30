@@ -1,5 +1,5 @@
 {
-  "name": "pw-component-input-group",
+  "name": "@planswell/pw-component-input-group",
   "description": "Planswell Input Group Component",
   "version": "0.0.1",
   "main": "lib/index.js",

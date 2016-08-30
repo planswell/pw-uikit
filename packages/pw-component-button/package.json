@@ -1,5 +1,5 @@
 {
-  "name": "pw-component-button",
+  "name": "@planswell/pw-component-button",
   "description": "Planswell Button Component",
   "version": "0.0.1",
   "main": "index.js",
