@@ -1,0 +1,14 @@
+.base {
+  user-select: none;
+  height: 0;
+  position: relative;
+  padding-top: 11.125%;
+
+  & svg {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+  }
+}
