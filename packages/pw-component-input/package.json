@@ -1,5 +1,5 @@
 {
-  "name": "pw-component-input",
+  "name": "@planswell/pw-component-input",
   "description": "Planswell input Component",
   "version": "0.0.1",
   "main": "index.js",

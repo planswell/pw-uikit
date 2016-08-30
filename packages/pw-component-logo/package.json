@@ -1,5 +1,5 @@
 {
-  "name": "pw-component-Logo",
+  "name": "@planswell/pw-component-Logo",
   "description": "Planswell Logo Component",
   "version": "0.0.1",
   "main": "index.js",
