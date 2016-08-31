@@ -18,6 +18,10 @@ launch React Storybook and you'll see composed stories there. Add a new story to
 behaviours or add new story files for new components. See [React Storybook](https://github.com/kadirahq/react-storybook)
 for more.
 
+## Publishing
+`npm login`
+`npm run lerna:publish`
+
 ## Testing
 
 Testing is done within each component by leveraging the webpack configuration with `internals/`. The entire testing
