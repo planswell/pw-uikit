@@ -1,0 +1,15 @@
+{
+  "name": "@planswell/pw-component-%name%",
+  "description": "Planswell %nametitlecase% Component",
+  "version": "0.0.1",
+  "main": "index.js",
+  "author": "%author% <%email%>",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^15.3.0",
+    "@planswell/pw-base-css": "*"
+  },
+  "devDependencies": {
+    "react-dom": "^15.3.0"
+  }
+}

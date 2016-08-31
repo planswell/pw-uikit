@@ -19,8 +19,17 @@ behaviours or add new story files for new components. See [React Storybook](http
 for more.
 
 ## Publishing
+
 `npm login`
 `npm run lerna:publish`
+
+## Helper Scripts
+
+Helper scripts live in the `helpers` directory. These are simple little scripts registered in `package.json` to ease the 
+development process. They should be simple and easy to understand, and if you can think of a task that could be 
+automated, feel free to write a helper script for it. Scripts are run with `npm run scriptname [arguments...]`
+
+ * `g:component new-name`: "generate component"; creates a file tree for a new component with the given name
 
 ## Testing
 
