@@ -1,7 +1,7 @@
 {
   "name": "pw-component-logo",
   "description": "Planswell Logo Component",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "main": "index.js",
   "author": "Paul Iannazzo <piannazzo@planswell.ca>",
   "license": "MIT",
