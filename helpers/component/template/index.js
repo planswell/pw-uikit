@@ -4,7 +4,7 @@ import styles from './style.css';
 
 function %nameclasscase%(props) {
   return (
-    <div styleName="base">
+    <div className={props.className} styleName="base">
     </div>
   );
 }
