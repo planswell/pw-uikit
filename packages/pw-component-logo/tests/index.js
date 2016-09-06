@@ -15,9 +15,9 @@ describe('<Logo />', () => {
 
   it('renders correct colors', () => {
     const renderedComponent = shallow(
-      <Logo color="green" />
+      <Logo className="green" />
     );
 
-    expect(renderedComponent.find('svg').props().style.color).toEqual('green');
+    expect(renderedComponent.hasClass('green')).toEqual(true);
   });
 });

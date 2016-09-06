@@ -5,14 +5,16 @@ import styles from './style.css';
 
 function Logo(props) {
   return (
-    <div styleName="base">
+    <div
+      styleName="base"
+      className={props.className}
+    >
       <svg
         version="1.1"
         x="0px"
         y="0px"
         viewBox="0 0 124.611 27.72"
         fill="currentColor"
-        style={{ color: props.color || 'black' }}
       >
         <g id="Isolation_Mode">
           <g>
@@ -111,7 +113,7 @@ function Logo(props) {
 }
 
 Logo.propTypes = {
-  color: PropTypes.string,
+  className: PropTypes.string,
 };
 
 export default cssModules(Logo, styles);
