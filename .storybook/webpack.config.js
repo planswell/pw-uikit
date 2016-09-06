@@ -40,6 +40,11 @@ module.exports = {
         include: path.resolve(__dirname, '../node_modules'),
         loaders: ['style-loader', 'css-loader'],
       },
+      {
+        test: /\.css$/,
+        include: path.resolve(__dirname, '../stories'),
+        loader: 'style-loader!css-loader?localIdentName=[local]__[path][name]__[hash:base64:5]&modules&importLoaders=1!postcss-loader',
+      },
     ],
   },
 

@@ -15,7 +15,7 @@
     "storybook": "start-storybook -p 9000",
     "lerna:publish": "npm run test && node node_modules/lerna/bin/lerna.js publish",
     "lint": "npm run lint:js && npm run lint:css",
-    "lint:eslint": "eslint --ignore-path .gitignore --ignore-pattern internals/scripts --ignore-pattern helpers/*/template",
+    "lint:eslint": "eslint --ignore-path .gitignore --ignore-pattern internals/scripts --ignore-pattern helpers",
     "lint:js": "npm run lint:eslint -- . ",
     "lint:css": "stylelint ./packages/**/*.css",
     "lint:staged": "lint-staged",
