@@ -14,6 +14,7 @@ class Password extends React.Component {
     placeholder: PropTypes.string,
     showing: PropTypes.bool,
     tabIndex: PropTypes.number,
+    className: PropTypes.string,
   };
 
   constructor(props) {
@@ -36,7 +37,7 @@ class Password extends React.Component {
   };
 
   render() {
-    const { name, value, onChange, placeholder, tabIndex } = this.props;
+    const { className, name, value, onChange, placeholder, tabIndex } = this.props;
     let type;
     let addonStyle;
 
@@ -52,7 +53,7 @@ class Password extends React.Component {
     }
 
     return (
-      <div styleName="base">
+      <div className={className} styleName="base">
         <Input
           type={type}
           {...{ name, value, onChange, placeholder, tabIndex }}
