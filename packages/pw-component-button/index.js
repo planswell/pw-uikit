@@ -19,6 +19,7 @@ class Button extends React.Component {
     ]).isRequired,
     disabled: PropTypes.bool,
     loading: PropTypes.bool,
+    className: PropTypes.string,
   };
 
   static defaultProps = {
@@ -38,6 +39,7 @@ class Button extends React.Component {
       <button
         type={buttonType}
         styleName={this.props.type}
+        className={this.props.className}
         disabled={isDisabled}
         onClick={this.props.onClick}
       >
