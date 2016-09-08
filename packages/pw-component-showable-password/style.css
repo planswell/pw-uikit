@@ -52,6 +52,6 @@
 
   &::before {
     font-awesome: check-circle;
-    color: var(--yellowFeatureColor);
+    color: var(--greenFeatureColor);
   }
 }

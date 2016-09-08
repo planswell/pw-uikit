@@ -45,23 +45,23 @@
 .primary {
   composes: base;
   color: var(--whiteTypeColor);
-  background-color: var(--blueFeatureColor);
+  background-color: var(--greenFeatureColor);
   border: none;
 
   &:hover {
-    background-color: color(var(--blueFeatureColor) tint(20%));
+    background-color: color(var(--greenFeatureColor) tint(20%));
   }
 
   &:focus {
-    background-color: color(var(--blueFeatureColor) tint(20%));
+    background-color: color(var(--greenFeatureColor) tint(20%));
   }
 
   &:disabled {
-    background-color: color(var(--blueFeatureColor) tint(40%));
+    background-color: color(var(--greenFeatureColor) tint(40%));
     cursor: not-allowed;
   }
 
   &:active {
-    background-color: color(var(--blueFeatureColor) shade(20%));
+    background-color: color(var(--greenFeatureColor) shade(20%));
   }
 }

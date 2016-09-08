@@ -1,3 +1,5 @@
+@import 'pw-base-css/vars.css';
+
 .base {
   user-select: none;
   height: 0;
@@ -10,5 +12,6 @@
     top: 0;
     left: 0;
     height: 100%;
+    color: var(--greenFeatureColor);
   }
 }
