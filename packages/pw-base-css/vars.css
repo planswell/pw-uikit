@@ -42,6 +42,10 @@
   --typeDefaultSize: 2.4rem;
   --typeSmallSize: 1.9rem;
 
+  /* icons */
+
+  --default-icon-size { font-size: var(--phi)em; } /* stylelint-disable-line */
+
   /* other */
 
   --defaultPadding: var(--tinySpacing) var(--smallSpacing);
