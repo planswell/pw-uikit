@@ -1,14 +1,12 @@
+@import 'pw-base-css/vars.css';
+
 .base {
   user-select: none;
-  height: 0;
-  position: relative;
-  padding-top: 11.125%;
 
-  & svg {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
+  & > svg {
+    display: inline-block;
+    color: var(--greenFeatureColor);
+    max-width: 100%;
+    max-height: 100%;
   }
 }

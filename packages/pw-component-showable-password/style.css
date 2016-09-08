@@ -2,38 +2,32 @@
 
 .base {
   composes: default from 'pw-base-css/typography.css';
-  position: relative;
-  display: table;
   @apply --default-border-and-radius;
 
-  border-collapse: separate;
+  display: flex;
+  background: var(--whiteBackgroundColor);
+  color: var(--blackTypeColor);
 
-  & * {
-    border: 0;
+  & input {
+    padding-right: 0;
+    border: none;
   }
 }
 
 /* awesome as in from font awesome */
 ._addon-awesome {
-  display: table-cell;
-  height: 100%;
-  width: 6.1rem;
-  white-space: nowrap;
-  vertical-align: middle;
-  font-size: 1rem;
-  font-weight: normal;
-  line-height: 1;
+  display: flex;
+  align-items: center;
   color: var(--greyTypeColor);
-  padding-top: 0.1rem; /* hack to make FontAwesome appears middle v-aligned due to font design issue. */
   padding-left: var(--tinySpacing);
   padding-right: var(--tinySpacing);
   cursor: pointer;
   user-select: none;
-  position: relative;
 
   &::before {
-    font-size: var(--phi)em; /* stylelint-disable-line */
-    padding-right: 0.5rem;
+    @apply --default-icon-size;
+
+    margin-right: 0.5rem;
     transition: color 0.1s;
   }
 }
@@ -52,6 +46,6 @@
 
   &::before {
     font-awesome: check-circle;
-    color: var(--yellowFeatureColor);
+    color: var(--greenFeatureColor);
   }
 }

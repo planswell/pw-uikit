@@ -6,7 +6,8 @@
   "author": "Paul Iannazzo <piannazzo@planswell.ca>",
   "license": "MIT",
   "dependencies": {
-    "react": "^15.3.0"
+    "react": "^15.3.0",
+    "pw-base-css": "^1.0.0"
   },
   "devDependencies": {
     "react-dom": "^15.3.0"
