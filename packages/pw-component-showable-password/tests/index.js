@@ -14,7 +14,6 @@ describe('<Password />', () => {
 
     expect(renderedComponent.state().showing).toEqual(false);
     expect(renderedComponent.find(Input).props().placeholder).toEqual(placeholderText);
-    expect(renderedComponent.find(Input).props().type).toEqual('text');
   });
 
   it('renders text field', () => {
