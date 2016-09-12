@@ -2,12 +2,14 @@ import React, { PropTypes } from 'react';
 import cssModules from 'react-css-modules';
 import styles from './style.css';
 
-
 function Logo(props) {
+  const divProps = { ...props };
+  delete divProps.styles;
+
   return (
     <div
+      {...divProps}
       styleName="base"
-      className={props.className}
     >
       <svg
         version="1.1"

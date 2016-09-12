@@ -29,21 +29,21 @@ class Button extends React.Component {
   };
 
   render() {
-    const { disabled, loading } = this.props;
-    const buttonType = this.props.submit ? 'submit' : 'button';
+    const { children, disabled, loading, submit, type, ...props } = this.props;
+    delete props.styles;
+    const buttonType = submit ? 'submit' : 'button';
 
     // Unless the disabled state is explicitly set, the button is disabled when loading.
     const isDisabled = (disabled !== undefined ? disabled : loading) || false;
 
     return (
       <button
+        {...props}
         type={buttonType}
-        styleName={this.props.type}
-        className={this.props.className}
+        styleName={type}
         disabled={isDisabled}
-        onClick={this.props.onClick}
       >
-        {this.props.children}
+        {children}
       </button>
     );
   }
