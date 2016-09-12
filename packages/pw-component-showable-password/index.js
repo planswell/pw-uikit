@@ -2,7 +2,6 @@ import React from 'react';
 import Input from 'pw-component-input';
 import cssModules from 'react-css-modules';
 import styles from './style.css';
-import isEmpty from 'lodash/isEmpty';
 
 const { PropTypes } = React;
 
@@ -24,41 +23,26 @@ class Password extends React.Component {
     };
   }
 
+  onChange = e => {
+    if (this.props.onChange) {
+      this.props.onChange(e);
+    }
+  };
+
   toggleShow = () => {
     this.setState({ showing: !this.state.showing });
   };
 
-  handleChange = e => {
-    // the below is done to support placeholders with password field
-    if (this.props.onChange) {
-      this.props.onChange(e.target.value);
-    }
-    e.preventDefault();
-  };
-
   render() {
-    const { className, name, value, onChange, placeholder, tabIndex } = this.props;
-    let type;
-    let addonStyle;
-
-    if (this.state.showing) {
-      type = 'text';
-      addonStyle = 'addon-password-showing';
-    } else {
-      type = 'password';
-      addonStyle = 'addon-password-hiding';
-      if (isEmpty(this.props.value) && this.props.placeholder) {
-        type = 'text';
-      }
-    }
+    const { className, name, value, placeholder, tabIndex } = this.props;
+    const { onChange, toggleShow } = this;
+    const { showing } = this.state;
+    const [type, addonStyle] = showing ? ['text', 'addon-password-showing'] : ['password', 'addon-password-hiding'];
 
     return (
       <div className={className} styleName="base">
-        <Input
-          type={type}
-          {...{ name, value, onChange, placeholder, tabIndex }}
-        />
-        <span styleName={addonStyle} onClick={this.toggleShow}>
+        <Input {...{ name, type, value, onChange, placeholder, tabIndex }} />
+        <span styleName={addonStyle} onClick={toggleShow}>
           Show
         </span>
       </div>
