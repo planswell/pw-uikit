@@ -7,8 +7,8 @@
   /* colors */
 
   --transparentColor: transparent;
-  --greyColor: #93939E;
-  --lightGreyColor: #D0D2D3;
+  --greyColor: #747480;
+  --lightGreyColor: #BBBDBF;
   --greenFeatureColor: #2EAA51;
   --blueFeatureColor: #0F84DB;
   --purpleFeatureColor: #8C50B2;
@@ -30,6 +30,7 @@
   --tinySpacing: 0.8rem;
   --smallSpacing: 1.6rem;
   --defaultSpacing: 2.4rem;
+  --semiSpacing: 3.2rem;
   --largeSpacing: 4.8rem;
   --extraLargeSpacing: 6.4rem;
 
@@ -40,7 +41,7 @@
   --typeTitle3Size: 3.2rem;
   --typeLargeSize: 2.8rem;
   --typeDefaultSize: 2.4rem;
-  --typeSmallSize: 1.9rem;
+  --typeSmallSize: 2.2rem;
 
   /* icons */
 
