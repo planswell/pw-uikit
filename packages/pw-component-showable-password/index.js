@@ -2,6 +2,7 @@ import React from 'react';
 import Input from 'pw-component-input';
 import cssModules from 'react-css-modules';
 import styles from './style.css';
+import omit from 'lodash/omit';
 
 const { PropTypes } = React;
 
@@ -34,15 +35,14 @@ class Password extends React.Component {
   };
 
   render() {
-    const { name, value, placeholder, tabIndex, ...divProps } = this.props;
-    delete divProps.styles;
+    const { name, value, placeholder, tabIndex, ...props } = this.props;
     const { onChange, toggleShow } = this;
     const { showing } = this.state;
     const [type, addonStyle] = showing ? ['text', 'addon-password-showing'] : ['password', 'addon-password-hiding'];
     const inputProps = { name, type, value, onChange, placeholder, tabIndex };
 
     return (
-      <div {...divProps} styleName="base">
+      <div {...omit(props, 'styles')} styleName="base">
         <Input {...inputProps} />
         <span styleName={addonStyle} onClick={toggleShow}>
           Show

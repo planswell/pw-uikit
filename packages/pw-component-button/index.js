@@ -1,6 +1,7 @@
 import React, { PropTypes } from 'react';
 import cssModules from 'react-css-modules';
 import styles from './style.css';
+import omit from 'lodash/omit';
 
 class Button extends React.Component {
   static propTypes = {
@@ -30,7 +31,6 @@ class Button extends React.Component {
 
   render() {
     const { children, disabled, loading, submit, type, ...props } = this.props;
-    delete props.styles;
     const buttonType = submit ? 'submit' : 'button';
 
     // Unless the disabled state is explicitly set, the button is disabled when loading.
@@ -38,7 +38,7 @@ class Button extends React.Component {
 
     return (
       <button
-        {...props}
+        {...omit(props, 'styles')}
         type={buttonType}
         styleName={type}
         disabled={isDisabled}
