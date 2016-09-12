@@ -1,12 +1,12 @@
 import React, { PropTypes } from 'react';
 import cssModules from 'react-css-modules';
 import styles from './style.css';
+import omit from 'lodash/omit';
 
-const InputGroup = ({ children, className }) => (
-  <div styleName="base" className={className}>
+const InputGroup = ({ children, ...props }) =>
+  <div {...omit(props, 'styles')} styleName="base">
     {children}
-  </div>
-);
+  </div>;
 
 InputGroup.propTypes = {
   children: PropTypes.oneOfType([

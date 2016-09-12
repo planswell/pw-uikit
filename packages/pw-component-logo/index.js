@@ -1,13 +1,13 @@
 import React, { PropTypes } from 'react';
 import cssModules from 'react-css-modules';
 import styles from './style.css';
-
+import omit from 'lodash/omit';
 
 function Logo(props) {
   return (
     <div
+      {...omit(props, 'styles')}
       styleName="base"
-      className={props.className}
     >
       <svg
         version="1.1"
