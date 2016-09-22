@@ -27,6 +27,7 @@
 
   /* spacing */
 
+  --minuteSpacing: 0.5rem;
   --tinySpacing: 0.8rem;
   --smallSpacing: 1.6rem;
   --defaultSpacing: 2.4rem;
