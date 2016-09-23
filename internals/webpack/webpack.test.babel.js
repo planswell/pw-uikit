@@ -48,6 +48,17 @@ module.exports = {
       { test: /\.jpe?g$|\.gif$|\.png$/i,
         loader: 'null-loader',
       },
+      // "file" loader makes sure those assets get served by WebpackDevServer.
+      // When you `import` an asset, you get its (virtual) filename.
+      // In production, they would get copied to the `build` folder.
+      {
+        test: /\.(ico|jpg|png|gif|eot|otf|webp|svg|ttf|woff|woff2)(\?.*)?$/,
+        exclude: /\/favicon.ico$/,
+        loader: 'file',
+        query: {
+          name: 'static/media/[name].[hash:8].[ext]',
+        },
+      },
     ],
   },
 
