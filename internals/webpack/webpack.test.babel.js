@@ -35,6 +35,10 @@ module.exports = {
         exclude: /node_modules/,
         loader: 'style-loader!css-loader?localIdentName=[local]&modules&importLoaders=1&sourceMap',
       },
+      { test: /\.css?$/,
+        include: /node_modules\/font-awesome/,
+        loader: 'style-loader!css-loader?localIdentName=[local]&modules&importLoaders=1&sourceMap',
+      },
       // sinon.js--aliased for enzyme--expects/requires global vars.
       // imports-loader allows for global vars to be injected into the module.
       // See https://github.com/webpack/webpack/issues/304
