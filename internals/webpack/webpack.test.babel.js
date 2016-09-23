@@ -35,6 +35,10 @@ module.exports = {
         exclude: /node_modules/,
         loader: 'style-loader!css-loader?localIdentName=[local]&modules&importLoaders=1&sourceMap',
       },
+      { test: /\.css?$/,
+        include: /node_modules\/font-awesome/,
+        loader: 'style-loader!css-loader?localIdentName=[local]&modules&importLoaders=1&sourceMap',
+      },
       // sinon.js--aliased for enzyme--expects/requires global vars.
       // imports-loader allows for global vars to be injected into the module.
       // See https://github.com/webpack/webpack/issues/304
@@ -47,6 +51,17 @@ module.exports = {
       },
       { test: /\.jpe?g$|\.gif$|\.png$/i,
         loader: 'null-loader',
+      },
+      // "file" loader makes sure those assets get served by WebpackDevServer.
+      // When you `import` an asset, you get its (virtual) filename.
+      // In production, they would get copied to the `build` folder.
+      {
+        test: /\.(ico|jpg|png|gif|eot|otf|webp|svg|ttf|woff|woff2)(\?.*)?$/,
+        exclude: /\/favicon.ico$/,
+        loader: 'file',
+        query: {
+          name: 'static/media/[name].[hash:8].[ext]',
+        },
       },
     ],
   },

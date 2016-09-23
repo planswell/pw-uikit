@@ -5,3 +5,4 @@ import './input-group';
 import './logo';
 import './progress-bar';
 import './link';
+import './icon';

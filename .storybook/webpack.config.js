@@ -45,6 +45,17 @@ module.exports = {
         include: path.resolve(__dirname, '../stories'),
         loader: 'style-loader!css-loader?localIdentName=[local]__[path][name]__[hash:base64:5]&modules&importLoaders=1!postcss-loader',
       },
+      // "file" loader makes sure those assets get served by WebpackDevServer.
+      // When you `import` an asset, you get its (virtual) filename.
+      // In production, they would get copied to the `build` folder.
+      {
+        test: /\.(ico|jpg|png|gif|eot|otf|webp|svg|ttf|woff|woff2)(\?.*)?$/,
+        exclude: /\/favicon.ico$/,
+        loader: 'file',
+        query: {
+          name: 'static/media/[name].[hash:8].[ext]',
+        },
+      },
     ],
   },
 
