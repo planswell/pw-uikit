@@ -22,7 +22,7 @@
 .button {
   @apply --default-border-and-radius;
 
-  padding: var(--minuteSpacing);
+  padding: var(--minuteSpacing) var(--smallSpacing);
   color: var(--greenFeatureColor);
   display: inline-block;
   border-color: currentColor;
@@ -35,4 +35,13 @@
   &:hover {
     filter: opacity(80%);
   }
+}
+
+.active {
+  composes: button;
+  border-bottom: none;
+
+  /* 0.15rem is the precise number needed to make the background extend beyond the reach of the content
+     It is not expected to be reused and so it is not a variable */
+  padding: 0.15rem var(--minuteSpacing); /* stylelint-disable-line unit-whitelist */
 }
