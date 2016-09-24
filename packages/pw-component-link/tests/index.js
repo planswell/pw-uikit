@@ -28,6 +28,8 @@ describe('<Link>', () => {
     expect(renderedComponent.containsMatchingElement(
       <Link to={href}><span>{text}</span></Link>
     )).toEqual(true);
-    expect(renderedComponent.props().className).toEqual('base default button');
+    const classNames = renderedComponent.props().className.split(/\s+/);
+    expect(classNames).toContain('button');
+    expect(classNames).toContain('button-common');
   });
 });
