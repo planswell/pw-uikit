@@ -2,7 +2,11 @@
 
 .base {
   position: relative;
-  min-height: 1rem;
+  min-height: 2rem;
+  line-height: 2rem;
+  padding: 0 var(--tinySpacing) 0 var(--smallSpacing);
+  margin: var(--minuteSpacing) 0;
+  font-weight: bold;
 }
 
 .bar-bg {
