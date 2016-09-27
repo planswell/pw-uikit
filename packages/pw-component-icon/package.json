@@ -7,7 +7,7 @@
   "license": "MIT",
   "dependencies": {
     "font-awesome": "^4.6.3",
-    "pw-base-css": "^1.0.0",
+    "pw-base-css": "^1.0.1",
     "react": "^15.3.0"
   },
   "devDependencies": {
