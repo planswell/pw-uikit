@@ -209,7 +209,7 @@
     "karma-safari-launcher": "1.0.0",
     "karma-sourcemap-loader": "0.3.7",
     "karma-webpack": "1.8.0",
-    "lerna": "boxxxie/lerna#a24bd46f4d610f7ee9c8f664c5fb801f2e6a4812",
+    "lerna": "2.0.0-beta.30",
     "lint-staged": "2.0.3",
     "minimist": "1.2.0",
     "mocha": "3.0.2",
