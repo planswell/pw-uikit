@@ -1,10 +1,13 @@
 @import './vars.css';
 
+/* This file can be both imported and composed from (via CSS module). Import will cause the default typography family,
+ * size, and line-height to apply to the root element and should be done only ONCE in your app. Composing will only
+ * bring in the font-family, which can be used sparing when resetting font family is necessary. */
+
+:root,
 .default {
-  white-space: nowrap;
-  font-size: 1rem;
-  line-height: 1;
   font-family:
+    Lato,
     -apple-system,
     BlinkMacSystemFont,
     'Segoe UI',
@@ -16,4 +19,9 @@
     'Droid Sans',
     'Helvetica Neue',
     sans-serif;
+}
+
+:root {
+  font-size: 1rem;
+  line-height: 1.6;
 }
