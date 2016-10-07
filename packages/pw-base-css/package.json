@@ -1,7 +1,7 @@
 {
   "name": "pw-base-css",
   "description": "Planswell Base CSS",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "Paul Iannazzo <piannazzo@planswell.ca>",
   "license": "MIT",
   "styles": [
