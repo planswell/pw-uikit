@@ -26,9 +26,7 @@ class Input extends React.Component {
     type: 'text',
   }
 
-  handleChange = e => {
-    this.props.onChange(e.target.value);
-  }
+  handleChange = e => this.props.onChange(e.target.value);
 
   render() {
     const passthroughProps = omit(this.props, 'styles');
