@@ -41,9 +41,15 @@
   --typeTitle1Size: 5.6rem;
   --typeTitle2Size: 4.2rem;
   --typeTitle3Size: 3.2rem;
-  --typeLargeSize: 2.8rem;
-  --typeDefaultSize: 2.4rem;
-  --typeSmallSize: 2.2rem;
+  --typeTitle4Size: 2.8rem;
+  --typeTitle5Size: 2.4rem;
+  --typeTitle6Size: 2.2rem;
+  --typeTitle7Size: 2rem;
+  --typeLargeSize: 2rem;
+  --typeDefaultSize: 1.6rem;
+  --typeSmallSize: 1.4rem;
+  --typeTinySize: 1.2rem;
+  --typeLegendSize: 1rem;
 
   /* icons */
 
@@ -51,7 +57,7 @@
 
   /* other */
 
-  --defaultPadding: var(--tinySpacing) var(--smallSpacing);
+  --defaultPadding: var(--smallSpacing);
   --defaultBorder: 0.1rem solid var(--lightGreyColor);
   --defaultBorderRadius: 0.4rem;
   --defaultInputHeight: 3.4rem;

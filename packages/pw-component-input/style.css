@@ -4,7 +4,6 @@
   composes: default from 'pw-base-css/typography.css';
   display: block;
   width: 100%;
-  height: var(--defaultInputHeight);
   color: var(--blackTypeColor);
   background-color: transparent;
   padding: var(--defaultPadding);

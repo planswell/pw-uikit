@@ -19,8 +19,8 @@
   display: flex;
   align-items: center;
   color: var(--greyTypeColor);
-  padding-left: var(--tinySpacing);
-  padding-right: var(--tinySpacing);
+  padding-left: var(--smallSpacing);
+  padding-right: var(--smallSpacing);
   cursor: pointer;
   user-select: none;
 
