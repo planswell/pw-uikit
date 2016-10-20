@@ -23,7 +23,7 @@ OurLink.propTypes = {
   ]),
   disabled: PropTypes.bool,
   href: PropTypes.string,
-  styles: PropTypes.object,
+  styles: PropTypes.object, // eslint-disable-line react/forbid-prop-types
 };
 
 const cssModuleOptions = {

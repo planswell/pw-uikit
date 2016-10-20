@@ -8,14 +8,14 @@ import InputGroup from './../packages/pw-component-input-group';
 storiesOf('InputGroup', module)
   .add('2 Inputs', () => (
     <InputGroup>
-      <Input tabIndex={2} />
-      <Input tabIndex={1} autoFocus />
+      <Input tabIndex={0} />
+      <Input tabIndex={-1} autoFocus />
     </InputGroup>))
   .add('3 Inputs', () => (
     <InputGroup>
-      <Input tabIndex={1} autoFocus />
-      <Input tabIndex={2} />
-      <Input tabIndex={3} />
+      <Input tabIndex={-1} autoFocus />
+      <Input tabIndex={0} />
+      <Input tabIndex={-2} />
     </InputGroup>))
   .add('text and password', () => (
     <InputGroup>

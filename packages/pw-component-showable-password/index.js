@@ -24,15 +24,13 @@ class Password extends React.Component {
     };
   }
 
-  onChange = e => {
+  onChange = (e) => {
     if (this.props.onChange) {
       this.props.onChange(e);
     }
   };
 
-  toggleShow = () => {
-    this.setState({ showing: !this.state.showing });
-  };
+  toggleShow = () => this.setState({ showing: !this.state.showing });
 
   render() {
     const { name, value, placeholder, tabIndex, ...props } = this.props;
@@ -44,9 +42,9 @@ class Password extends React.Component {
     return (
       <div {...omit(props, ['styles', 'showing'])} styleName="base">
         <Input {...inputProps} />
-        <span styleName={addonStyle} onClick={toggleShow}>
+        <button styleName={addonStyle} onClick={toggleShow}>
           Show
-        </span>
+        </button>
       </div>
     );
   }

@@ -4,7 +4,6 @@
   @apply --default-border-and-radius;
 
   & > * {
-    margin-bottom: 1rem;
     border-radius: 0;
     margin-bottom: 0;
     border: 0;
