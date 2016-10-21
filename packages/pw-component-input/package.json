@@ -8,7 +8,8 @@
   "dependencies": {
     "lodash": "^4.15.0",
     "pw-base-css": "^1.0.2",
-    "react": "^15.3.0"
+    "react": "^15.3.0",
+    "react-maskedinput": "^3.3.0"
   },
   "devDependencies": {
     "react-dom": "^15.3.0"
