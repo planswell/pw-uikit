@@ -5,14 +5,23 @@ import cssStyles from './style.css';
 
 const { PropTypes } = React;
 
-const OurLink = ({ button, children, styles, ...props }) => {
+const OurLink = ({ button, children, styles, to, ...props }) => {
   const styleName = button ? 'button' : 'link';
+  const childrenContainer = <span styleName="inner">{children}</span>;
 
-  return (
-    <Link styleName={`base ${styleName}`} activeClassName={styles.active} {...props}>
-      <span styleName="inner">{children}</span>
+  const routerLink = () => (
+    <Link styleName={`base ${styleName}`} activeClassName={styles.active} to={to} {...props}>
+      {childrenContainer}
     </Link>
   );
+
+  const normalLink = () => (
+    <a styleName={`base ${styleName}`} {...props}>
+      {childrenContainer}
+    </a>
+  );
+
+  return to ? routerLink() : normalLink();
 };
 
 OurLink.propTypes = {

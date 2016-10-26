@@ -9,6 +9,19 @@ describe('<Link>', () => {
     const href = 'http://example.com';
     const text = 'Click Me!';
     const renderedComponent = shallow(
+      <OurLink href={href}>{text}</OurLink>
+    );
+
+    expect(renderedComponent.containsMatchingElement(
+      <a href={href}><span>{text}</span></a>
+    )).toEqual(true);
+    expect(renderedComponent.props().className).toEqual('base default link');
+  });
+
+  it('renders a react-link when `to` props is supplied', () => {
+    const href = 'http://example.com';
+    const text = 'Click Me!';
+    const renderedComponent = shallow(
       <OurLink to={href}>{text}</OurLink>
     );
 
