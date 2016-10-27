@@ -11,3 +11,8 @@
   @apply --placeholder-color;
 }
 
+.invalid {
+  composes: default;
+  background-color: var(--pinkBackgroundColor);
+  border-color: var(--pinkFeatureColor);
+}

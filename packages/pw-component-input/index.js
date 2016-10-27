@@ -34,22 +34,24 @@ class Input extends React.Component {
     invalid: PropTypes.bool,
     tabIndex: PropTypes.number,
     mask: PropTypes.string,
+    appearance: PropTypes.oneOf(['default', 'invalid']),
   }
 
   static defaultProps = {
+    appearance: 'default',
     type: 'text',
   }
 
   handleChange = e => this.props.onChange(e.target.value);
 
   render() {
-    const { mask } = this.props;
+    const { mask, appearance } = this.props;
     const passthroughProps = omit(this.props, 'styles');
     const InputComponent = mask ? MaskedInput : 'input';
     return (
       <InputComponent
+        styleName={appearance}
         {...passthroughProps}
-        styleName="default"
         onChange={this.handleChange}
       />
     );
