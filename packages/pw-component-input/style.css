@@ -12,12 +12,7 @@
 }
 
 .invalid {
-  composes: default from 'pw-base-css/typography.css';
-  display: block;
-  width: 100%;
-  color: var(--blackTypeColor);
+  composes: default;
   background-color: var(--redBackgroundColor);
-  padding: var(--defaultPadding);
-  @apply --invalid-border-and-radius;
-  @apply --placeholder-color;
+  border-color: var(--redInvalidColor);
 }

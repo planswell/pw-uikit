@@ -14,4 +14,4 @@ storiesOf('Input', module)
   .add('with mask', () => (
     <Input mask="111-111-1111" onChange={id} />))
   .add('with invalid input', () => (
-    <Input styleName="invalid" onChange={id} />));
+    <Input cssStyle="invalid" onChange={id} />));

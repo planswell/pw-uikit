@@ -69,11 +69,6 @@
     border-radius: var(--defaultBorderRadius);
   }
 
-  --invalid-border-and-radius {
-    border: 0.1rem solid  var(--redInvalidColor);
-    border-radius: var(--defaultBorderRadius);
-  }
-
   /* component defaults */
   --placeholder-color: { &::placeholder { color: var(--placeholderTypeColor); } }
 }
