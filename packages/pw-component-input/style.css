@@ -13,6 +13,6 @@
 
 .invalid {
   composes: default;
-  background-color: var(--redBackgroundColor);
-  border-color: var(--redInvalidColor);
+  background-color: var(--pinkBackgroundColor);
+  border-color: var(--pinkFeatureColor);
 }

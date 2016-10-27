@@ -15,7 +15,7 @@
   --purpleFeatureColor: #8C50B2;
   --yellowFeatureColor: #0F84DB;
   --redFeatureColor: #DF1765;
-  --redInvalidColor: #F70058;
+  --pinkFeatureColor: #F70058;
   --aquaFeatureColor: #00A2AD;
   --blackTypeColor: #282828;
   --greyTypeColor: var(--greyColor);
@@ -26,7 +26,7 @@
   --whiteTypeColor: #FFF;
   --whiteBackgroundColor: #FFF;
   --yellowBackgroundColor: #F6F4BF;
-  --redBackgroundColor: #FFE4E2;
+  --pinkBackgroundColor: #FFE4E2;
 
   /* spacing */
 
