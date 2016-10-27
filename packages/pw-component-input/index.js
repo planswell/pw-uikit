@@ -34,9 +34,11 @@ class Input extends React.Component {
     invalid: PropTypes.bool,
     tabIndex: PropTypes.number,
     mask: PropTypes.string,
+    styleName: PropTypes.string,
   }
 
   static defaultProps = {
+    styleName: 'default',
     type: 'text',
   }
 
@@ -47,11 +49,12 @@ class Input extends React.Component {
     const passthroughProps = omit(this.props, 'styles');
     const InputComponent = mask ? MaskedInput : 'input';
     return (
-      <InputComponent
-        {...passthroughProps}
-        styleName="default"
-        onChange={this.handleChange}
-      />
+      <div>
+        <InputComponent
+          {...passthroughProps}
+          onChange={this.handleChange}
+        />
+      </div>
     );
   }
 }

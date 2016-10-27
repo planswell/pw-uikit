@@ -11,3 +11,13 @@
   @apply --placeholder-color;
 }
 
+.invalid {
+  composes: default from 'pw-base-css/typography.css';
+  display: block;
+  width: 100%;
+  color: var(--blackTypeColor);
+  background-color: var(--redBackgroundColor);
+  padding: var(--defaultPadding);
+  @apply --invalid-border-and-radius;
+  @apply --placeholder-color;
+}
