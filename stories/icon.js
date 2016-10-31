@@ -5,10 +5,10 @@ import Icon from './../packages/pw-component-icon';
 storiesOf('Icon', module)
   .add('check', () => (
     <Icon name="check" />))
-  .add('flag', () => (
-    <Icon name="flag" />))
-  .add('dollar', () => (
-    <Icon name="dollar" />))
-  .add('globe', () => (
-    <Icon name="globe" />))
+  .add('house', () => (
+    <Icon name="error" />))
+  .add('house', () => (
+    <Icon name="house" />))
+  .add('umbrella', () => (
+    <Icon name="umbrella" />))
   ;
