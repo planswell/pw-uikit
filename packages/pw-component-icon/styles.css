@@ -35,10 +35,11 @@
 }
 
 .icon-error::before { content: '\e801'; }
-.icon-check::before { content: '\e802'; }
-.icon-coin-up-arrow::before { content: '\e803'; }
-.icon-left-arrow-circle::before { content: '\e804'; }
-.icon-house::before { content: '\e805'; }
-.icon-umbrella::before { content: '\e806'; }
-.icon-smile::before { content: '\e807'; }
-.icon-coin-up-arrow-1::before { content: '\e808'; }
+.icon-finance-details::before { content: '\e808'; }
+.icon-coin-up-arrow::before { content: '\e809'; }
+.icon-house::before { content: '\e80a'; }
+.icon-left-arrow-circle::before { content: '\e80b'; }
+.icon-mortarboard::before { content: '\e80c'; }
+.icon-smile::before { content: '\e80d'; }
+.icon-check::before { content: '\e80e'; }
+.icon-umbrella::before { content: '\e80f'; }
