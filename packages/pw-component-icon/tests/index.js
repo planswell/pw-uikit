@@ -5,13 +5,13 @@ import { shallow } from 'enzyme';
 import React from 'react';
 
 describe('<Icon />', () => {
-  it('renders font-awesome icons', () => {
+  it('renders check icons', () => {
     const renderedComponent = shallow(
       <Icon name="check" />
     );
 
     expect(renderedComponent.containsMatchingElement(
-      <i className="fa fa-check" />
+      <i className="icon icon-check" />
     )).toEqual(true);
   });
 });

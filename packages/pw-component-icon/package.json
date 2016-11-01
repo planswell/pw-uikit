@@ -6,7 +6,6 @@
   "author": "Quinn Strahl <qstrahl@planswell.ca>",
   "license": "MIT",
   "dependencies": {
-    "font-awesome": "^4.6.3",
     "pw-base-css": "^2.1.0",
     "react": "^15.3.0"
   },
