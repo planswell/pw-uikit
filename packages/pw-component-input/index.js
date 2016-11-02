@@ -46,7 +46,7 @@ class Input extends React.Component {
 
   render() {
     const { mask, appearance } = this.props;
-    const passthroughProps = omit(this.props, 'styles');
+    const passthroughProps = omit(this.props, ['styles', 'appearance']);
     const InputComponent = mask ? MaskedInput : 'input';
     return (
       <InputComponent
