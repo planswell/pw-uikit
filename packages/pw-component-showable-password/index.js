@@ -42,7 +42,7 @@ class Password extends React.Component {
     return (
       <div {...omit(props, ['styles', 'showing'])} styleName="base">
         <Input {...inputProps} />
-        <button styleName={addonStyle} onClick={toggleShow}>
+        <button type="button" styleName={addonStyle} onClick={toggleShow}>
           Show
         </button>
       </div>
