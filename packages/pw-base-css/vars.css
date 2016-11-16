@@ -54,7 +54,7 @@
   --typeLegendSize: 1rem;
 
   /* icons */
-
+  --iconBulletPoint: '\e*804';
   --default-icon-size { font-size: var(--phi)em; } /* stylelint-disable-line */
 
   /* other */
