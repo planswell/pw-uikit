@@ -1,0 +1,12 @@
+@font-face {
+  font-family: fontello;
+  src: url('pw-base-css/fonts/fontello.eot?70703903');
+  src:
+    url('pw-base-css/fonts/fontello.eot?70703903#iefix') format('embedded-opentype'),
+    url('pw-base-css/fonts/fontello.woff2?70703903') format('woff2'),
+    url('pw-base-css/fonts/fontello.woff?70703903') format('woff'),
+    url('pw-base-css/fonts/fontello.ttf?70703903') format('truetype'),
+    url('pw-base-css/fonts/fontello.svg?70703903#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

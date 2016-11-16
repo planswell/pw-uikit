@@ -54,7 +54,20 @@
   --typeLegendSize: 1rem;
 
   /* icons */
-
+  --iconEnvelope: '\e800';
+  --iconError: '\e801';
+  --iconCreditCard: '\e802';
+  --iconHandset: '\e803';
+  --iconBulletPoint: '\e804';
+  --iconFinanceDetails: '\e805';
+  --iconCoinUpArrow: '\e809';
+  --iconHouse: '\e80a';
+  --iconLeftArrowCircle: '\e80b';
+  --iconMortarboard: '\e80c';
+  --iconSmile: '\e80d';
+  --iconCheck: '\e80e';
+  --iconUmbrella: '\e80f';
+  --iconCross: '\e812';
   --default-icon-size { font-size: var(--phi)em; } /* stylelint-disable-line */
 
   /* other */
