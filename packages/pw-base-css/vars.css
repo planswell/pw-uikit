@@ -68,7 +68,19 @@
   --iconCheck: '\e80e';
   --iconUmbrella: '\e80f';
   --iconCross: '\e812';
+
   --default-icon-size { font-size: var(--phi)em; } /* stylelint-disable-line */
+
+  --default-circle-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--lightBackgroundColor);
+    border-radius: 50%;
+    width: var(--extraLargeSpacing);
+    height: var(--extraLargeSpacing);
+    font-size: var(--typeTitle3Size);
+  }
 
   /* other */
 
