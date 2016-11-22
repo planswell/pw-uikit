@@ -2,6 +2,7 @@ import React, { PropTypes } from 'react';
 import cssModules from 'react-css-modules';
 import styles from './style.css';
 import omit from 'lodash/omit';
+import Icon from 'pw-component-icon';
 
 class Button extends React.Component {
   static propTypes = {
@@ -21,16 +22,22 @@ class Button extends React.Component {
     disabled: PropTypes.bool,
     loading: PropTypes.bool,
     className: PropTypes.string,
+    icon: PropTypes.string,
+    align: PropTypes.oneOf([
+      'left',
+      'right',
+    ]),
   };
 
   static defaultProps = {
     onClick: () => {},
     type: 'default',
     submit: false,
+    align: 'left',
   };
 
   render() {
-    const { children, disabled, loading, submit, type, ...props } = this.props;
+    const { children, disabled, loading, submit, type, icon, align, ...props } = this.props;
     const buttonType = submit ? 'submit' : 'button';
 
     // Unless the disabled state is explicitly set, the button is disabled when loading.
@@ -43,7 +50,9 @@ class Button extends React.Component {
         styleName={type}
         disabled={isDisabled}
       >
+        {icon && align === 'left' ? <Icon name={icon} /> : null }
         {children}
+        {icon && align === 'right' ? <Icon name={icon} /> : null }
       </button>
     );
   }

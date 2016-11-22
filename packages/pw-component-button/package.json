@@ -8,6 +8,7 @@
   "dependencies": {
     "lodash": "^4.15.0",
     "pw-base-css": "^2.1.0",
+    "pw-component-icon": "^3.2.0",
     "react": "^15.3.0"
   },
   "devDependencies": {

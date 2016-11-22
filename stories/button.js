@@ -10,4 +10,9 @@ storiesOf('Button', module)
   .add('primary', () => (
     <Button type="primary">I love Phi</Button>))
   .add('primary - disabled', () => (
-    <Button type="primary" disabled>Test</Button>));
+    <Button type="primary" disabled>Test</Button>))
+  .add('icon - left', () => (
+    <Button icon="coin-up-arrow">Log out</Button>))
+  .add('icon - right', () => (
+    <Button icon="coin-up-arrow" align="right">Log out </Button>
+  ));
