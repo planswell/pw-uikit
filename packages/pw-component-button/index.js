@@ -50,9 +50,9 @@ class Button extends React.Component {
         styleName={type}
         disabled={isDisabled}
       >
-        {icon && align === 'left' ? <Icon name={icon} /> : null }
+        {icon && align === 'left' && <Icon name={icon} styleName="icon-left" /> }
         {children}
-        {icon && align === 'right' ? <Icon name={icon} /> : null }
+        {icon && align === 'right' && <Icon name={icon} styleName="icon-right" /> }
       </button>
     );
   }

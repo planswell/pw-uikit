@@ -14,5 +14,5 @@ storiesOf('Button', module)
   .add('icon - left', () => (
     <Button icon="coin-up-arrow">Log out</Button>))
   .add('icon - right', () => (
-    <Button icon="coin-up-arrow" align="right">Log out </Button>
+    <Button icon="coin-up-arrow" align="right">Log out</Button>
   ));

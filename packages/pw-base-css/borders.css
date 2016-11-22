@@ -4,6 +4,10 @@
   border-radius: 0.4rem;
 }
 
+.circle-radius {
+  border-radius: 2.5rem/50%;
+}
+
 .default {
   border: 0.1rem solid;
   border-color: var(--greyFeatureColor;);

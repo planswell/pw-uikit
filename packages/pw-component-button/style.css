@@ -1,9 +1,17 @@
 @import 'pw-base-css/vars.css';
 
+.icon-left {
+  margin-right: 1rem;
+}
+
+.icon-right {
+  margin-left: 1rem;
+}
+
 .base {
   composes: default from 'pw-base-css/typography.css';
   composes: default from 'pw-base-css/borders.css';
-  composes: default-radius from 'pw-base-css/borders.css';
+  composes: circle-radius from 'pw-base-css/borders.css';
   display: inline-block;
   margin: initial;
   font-weight: 600;
