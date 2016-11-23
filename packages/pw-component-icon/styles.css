@@ -1,15 +1,6 @@
-@font-face {
-  font-family: fontello;
-  src: url('./fonts/fontello.eot?70703903');
-  src:
-    url('./fonts/fontello.eot?70703903#iefix') format('embedded-opentype'),
-    url('./fonts/fontello.woff2?70703903') format('woff2'),
-    url('./fonts/fontello.woff?70703903') format('woff'),
-    url('./fonts/fontello.ttf?70703903') format('truetype'),
-    url('./fonts/fontello.svg?70703903#fontello') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
+@import 'pw-base-css/vars.css';
+
+@import 'pw-base-css/custom-font-faces.css';
 
 .icon {
   font-family: fontello;
@@ -33,17 +24,17 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-envelope::before { content: '\e800'; }
-.icon-error::before { content: '\e801'; }
-.icon-credit-card::before { content: '\e802'; }
-.icon-handset::before { content: '\e803'; }
-.icon-bullet-point::before { content: '\e804'; }
-.icon-finance-details::before { content: '\e808'; }
-.icon-coin-up-arrow::before { content: '\e809'; }
-.icon-house::before { content: '\e80a'; }
-.icon-left-arrow-circle::before { content: '\e80b'; }
-.icon-mortarboard::before { content: '\e80c'; }
-.icon-smile::before { content: '\e80d'; }
-.icon-check::before { content: '\e80e'; }
-.icon-umbrella::before { content: '\e80f'; }
-.icon-cross::before { content: '\e812'; }
+.icon-envelope::before { content: var(--iconEnvelope); }
+.icon-error::before { content: var(--iconError); }
+.icon-credit-card::before { content: var(--iconCreditCard); }
+.icon-handset::before { content: var(--iconHandset); }
+.icon-bullet-point::before { content: var(--iconBulletPoint); }
+.icon-finance-details::before { content: var(--iconFinanceDetails); }
+.icon-coin-up-arrow::before { content: var(--iconCoinUpArrow); }
+.icon-house::before { content: var(--iconHouse); }
+.icon-left-arrow-circle::before { content: var(--iconLeftArrowCircle); }
+.icon-mortarboard::before { content: var(--iconMortarboard); }
+.icon-smile::before { content: var(--iconSmile); }
+.icon-check::before { content: var(--iconCheck); }
+.icon-umbrella::before { content: var(--iconUmbrella); }
+.icon-cross::before { content: var(--iconCross); }
