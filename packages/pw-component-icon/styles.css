@@ -1,7 +1,5 @@
 @import 'pw-base-css/vars.css';
 
-@import 'pw-base-css/custom-font-faces.css';
-
 .icon {
   font-family: fontello;
   font-style: normal;
