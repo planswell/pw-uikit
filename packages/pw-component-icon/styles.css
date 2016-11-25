@@ -26,6 +26,7 @@
 .icon-error::before { content: var(--iconError); }
 .icon-credit-card::before { content: var(--iconCreditCard); }
 .icon-handset::before { content: var(--iconHandset); }
+.icon-hand-and-coin:before { content: var(--iconHandAndCoin); }
 .icon-bullet-point::before { content: var(--iconBulletPoint); }
 .icon-finance-details::before { content: var(--iconFinanceDetails); }
 .icon-coin-up-arrow::before { content: var(--iconCoinUpArrow); }
