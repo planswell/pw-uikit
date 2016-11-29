@@ -1,14 +1,14 @@
 {
   "name": "pw-component-showable-password",
   "description": "Planswell Showable Password Component",
-  "version": "3.1.2",
+  "version": "3.1.3",
   "main": "index.js",
   "author": "Paul Iannazzo <piannazzo@planswell.ca>",
   "license": "MIT",
   "dependencies": {
     "lodash": "^4.15.0",
-    "pw-base-css": "^2.3.0",
-    "pw-component-input": "^2.1.3",
+    "pw-base-css": "^2.4.0",
+    "pw-component-input": "^2.1.4",
     "react": "^15.3.0"
   },
   "devDependencies": {
