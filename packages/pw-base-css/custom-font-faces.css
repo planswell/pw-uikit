@@ -10,3 +10,8 @@
   font-weight: normal;
   font-style: normal;
 }
+
+/* This is for you to use composition to import font face defined above so you don't need to import this file */
+.default {
+  display: inherit;
+}
