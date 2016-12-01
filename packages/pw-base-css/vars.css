@@ -85,6 +85,8 @@
 
   /* other */
 
+  --default-shadow { box-shadow: 0 0.5rem 0.5rem var(--lightBackgroundColor); }
+
   --defaultPadding: var(--smallSpacing);
   --defaultBorder: 0.1rem solid var(--lightGreyColor);
   --defaultBorderRadius: 0.4rem;

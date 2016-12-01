@@ -1,0 +1,13 @@
+@import 'pw-base-css/vars.css';
+
+.base {
+  @apply --default-shadow;
+
+  display: flex;
+  position: fixed;
+  align-items: center;
+  padding: 0 var(--smallSpacing);
+  width: 100%;
+  background-color: var(--whiteBackgroundColor);
+  height: var(--largeSpacing);
+}

@@ -6,3 +6,4 @@ import './logo';
 import './progress-bar';
 import './link';
 import './icon';
+import './sticky-bar';

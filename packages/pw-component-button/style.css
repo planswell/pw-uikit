@@ -14,6 +14,7 @@
   composes: circle-radius from 'pw-base-css/borders.css';
   display: inline-block;
   margin: initial;
+  font-size: var(--typeLargeSize);
   font-weight: 600;
   text-align: center;
   line-height: 1;
@@ -21,7 +22,7 @@
   touch-action: manipulation;
   cursor: pointer;
   background-image: none;
-  padding: var(--defaultPadding);
+  padding: var(--defaultPadding) var(--semiSpacing);
   user-select: none;
   transition: background-color 0.2s;
 }
