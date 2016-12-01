@@ -36,7 +36,7 @@
   composes: _addon-awesome;
 
   &::before {
-    font-awesome: circle-thin;
+    content: var(--iconCircleThin);
     color: var(--lightBackgroundColor);
   }
 }
@@ -45,7 +45,7 @@
   composes: _addon-awesome;
 
   &::before {
-    font-awesome: check-circle;
+    content: var(--iconCheckCircle);
     color: var(--greenFeatureColor);
   }
 }
