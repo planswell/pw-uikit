@@ -69,6 +69,8 @@
   --iconCheck: '\e80e';
   --iconUmbrella: '\e80f';
   --iconCross: '\e812';
+  --iconCheckCircle: '\e80e';
+  --iconCircleThin: '\e804';
 
   --default-icon-size { font-size: var(--phi)em; } /* stylelint-disable-line */
 
