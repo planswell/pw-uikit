@@ -2,7 +2,7 @@ import React from 'react';
 import Input from 'pw-component-input';
 import cssModules from 'react-css-modules';
 import styles from './style.css';
-import omit from 'lodash/omit';
+import { omit } from 'lodash';
 
 const { PropTypes } = React;
 
