@@ -1,7 +1,7 @@
 import React from 'react';
 import cssModules from 'react-css-modules';
 import cssStyles from './style.css';
-import omit from 'lodash/omit';
+import { omit } from 'lodash';
 import MaskedInput from 'react-maskedinput';
 
 const { PropTypes } = React;

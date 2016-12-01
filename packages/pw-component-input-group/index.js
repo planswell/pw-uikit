@@ -1,7 +1,7 @@
 import React, { PropTypes } from 'react';
 import cssModules from 'react-css-modules';
 import styles from './style.css';
-import omit from 'lodash/omit';
+import { omit } from 'lodash';
 
 const InputGroup = ({ children, ...props }) =>
   <div {...omit(props, 'styles')} styleName="base">
