@@ -59,7 +59,6 @@
   --iconCreditCard: '\e802';
   --iconHandset: '\e803';
   --iconHandAndCoin: '\e805';
-  --iconBulletPoint: '\e804';
   --iconFinanceDetails: '\e808';
   --iconCoinUpArrow: '\e809';
   --iconHouse: '\e80a';
@@ -69,6 +68,7 @@
   --iconCheck: '\e80e';
   --iconUmbrella: '\e80f';
   --iconCross: '\e812';
+  --iconCircleThin: '\e804';
 
   --default-icon-size { font-size: var(--phi)em; } /* stylelint-disable-line */
 
