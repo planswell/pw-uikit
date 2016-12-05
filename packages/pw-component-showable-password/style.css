@@ -45,7 +45,7 @@
   composes: _addon-awesome;
 
   &::before {
-    content: var(--iconCheckCircle);
+    content: var(--iconCheck);
     color: var(--greenFeatureColor);
   }
 }
