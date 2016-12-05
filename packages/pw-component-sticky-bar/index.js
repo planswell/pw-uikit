@@ -3,11 +3,10 @@ import cssModules from 'react-css-modules';
 import styles from './style.css';
 import { omit } from 'lodash';
 
-const StickyBar = ({ children, ...props }) => (
+const StickyBar = ({ children, ...props }) =>
   <div {...omit(props, 'styles')} styleName="base">
     {children}
-  </div>
-);
+  </div>;
 
 StickyBar.propTypes = {
   children: PropTypes.oneOfType([
