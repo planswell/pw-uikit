@@ -2,6 +2,7 @@
 
 .base {
   user-select: none;
+  line-height: 1;
 
   & > svg {
     display: inline-block;
