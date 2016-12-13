@@ -19,8 +19,7 @@
   display: flex;
   align-items: center;
   color: var(--greyTypeColor);
-  padding-left: var(--smallSpacing);
-  padding-right: var(--smallSpacing);
+  padding: 0 var(--smallSpacing);
   cursor: pointer;
   user-select: none;
 
@@ -37,7 +36,7 @@
   composes: _addon-awesome;
 
   &::before {
-    content: var(--iconCircleThin);
+    content: var(--iconBulletPoint);
     color: var(--lightBackgroundColor);
   }
 }
@@ -46,7 +45,7 @@
   composes: _addon-awesome;
 
   &::before {
-    content: var(--iconCheck);
+    content: var(--iconCheckInCircle);
     color: var(--greenFeatureColor);
   }
 }
