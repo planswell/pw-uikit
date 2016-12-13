@@ -16,5 +16,6 @@
 
   & > *:last-child {
     border-bottom: 0;
+    border-radius: initial initial var(--defaultBorderRadius) var(--defaultBorderRadius);
   }
 }
