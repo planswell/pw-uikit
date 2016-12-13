@@ -58,6 +58,8 @@
   --iconError: '\e801';
   --iconCreditCard: '\e802';
   --iconHandset: '\e803';
+  --iconBulletPoint: '\e804';
+  --iconCircleThin: '\e804'; /* deprecated */
   --iconHandAndCoin: '\e805';
   --iconFinanceDetails: '\e808';
   --iconCoinUpArrow: '\e809';
@@ -67,8 +69,9 @@
   --iconSmile: '\e80d';
   --iconCheck: '\e80e';
   --iconUmbrella: '\e80f';
+  --iconArrow: '\e810';
+  --iconCheckInCircle: '\e811';
   --iconCross: '\e812';
-  --iconCircleThin: '\e804';
 
   --default-icon-size { font-size: var(--phi)em; } /* stylelint-disable-line */
 
