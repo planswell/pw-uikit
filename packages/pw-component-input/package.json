@@ -1,13 +1,13 @@
 {
   "name": "pw-component-input",
   "description": "Planswell input Component",
-  "version": "2.2.1",
+  "version": "2.3.0",
   "main": "index.js",
   "author": "Paul Iannazzo <piannazzo@planswell.ca>",
   "license": "MIT",
   "dependencies": {
     "lodash": "^4.15.0",
-    "pw-base-css": "^2.5.1",
+    "pw-base-css": "^2.6.0",
     "react": "^15.3.0",
     "react-maskedinput": "^3.3.0"
   },
