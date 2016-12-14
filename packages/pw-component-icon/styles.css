@@ -39,3 +39,4 @@
 .icon-arrow::before { content: var(--iconArrow); }
 .icon-check-in-circle::before { content: var(--iconCheckInCircle); }
 .icon-cross::before { content: var(--iconCross); }
+.icon-chat-bubble::before { content: var(--iconChatBubble); }
