@@ -14,7 +14,6 @@
   composes: circle-radius from 'pw-base-css/borders.css';
   display: inline-block;
   margin: initial;
-  font-size: var(--typeLargeSize);
   font-weight: 600;
   text-align: center;
   line-height: 1;
