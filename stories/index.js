@@ -7,3 +7,4 @@ import './progress-bar';
 import './link';
 import './icon';
 import './sticky-bar';
+import './checkbox';

@@ -1,0 +1,16 @@
+{
+  "name": "pw-component-checkbox",
+  "description": "Planswell Checkbox Component",
+  "version": "0.0.1",
+  "main": "index.js",
+  "author": "Izzie Colpitts-Campbell <izzieccampbell@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^15.3.0",
+    "pw-component-icon": "^4.3.0",
+    "pw-base-css": "*"
+  },
+  "devDependencies": {
+    "react-dom": "^15.3.0"
+  }
+}
