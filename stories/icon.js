@@ -20,4 +20,5 @@ storiesOf('Icon', module)
   .add('arrow', () => <Icon name="arrow" />)
   .add('check-in-circle', () => <Icon name="check-in-circle" />)
   .add('cross', () => <Icon name="cross" />)
+  .add('chat-bubble', () => <Icon name="chat-bubble" />)
   ;
