@@ -27,7 +27,10 @@
     @apply --default-icon-size;
 
     font-family: fontello;
-    margin-right: 0.5rem;
+    margin-right: var(--tinySpacing);
+
+    /* This is padded down due to the font not being totally vertically aligned, not a CSS problem */
+    padding-top: 0.1rem;
     transition: color 0.1s;
   }
 }

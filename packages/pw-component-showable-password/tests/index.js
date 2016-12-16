@@ -45,11 +45,11 @@ describe('<Password />', () => {
       <Password value="password" />
     );
 
-    renderedComponent.find('button').simulate('click');
+    renderedComponent.find('a').simulate('click');
     expect(renderedComponent.state().showing).toEqual(true);
     expect(renderedComponent.find(Input).props().type).toEqual('text');
 
-    renderedComponent.find('button').simulate('click');
+    renderedComponent.find('a').simulate('click');
     expect(renderedComponent.state().showing).toEqual(false);
     expect(renderedComponent.find(Input).props().type).toEqual('password');
   });
