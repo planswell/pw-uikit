@@ -8,3 +8,4 @@ import './link';
 import './icon';
 import './sticky-bar';
 import './checkbox';
+import './dropdown';
