@@ -1,7 +1,7 @@
 {
   "name": "pw-component-dropdown",
   "description": "Planswell Dropdown Component",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "main": "index.js",
   "author": "Izzie Colpitts-Campbell <izzieccampbell@gmail.com>",
   "license": "MIT",
