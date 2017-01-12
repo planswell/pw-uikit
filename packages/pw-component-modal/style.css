@@ -1,0 +1,42 @@
+@import 'pw-base-css/vars.css';
+
+.base {
+  position: absolute;
+  top: 40vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50vw;
+  min-width: 32rem;
+  max-width: 50rem;
+  background: white;
+  padding: var(--smallSpacing) 5vw;
+  text-align: center;
+  @media (max-width: 40rem) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    min-width: initial;
+    margin-left: 0;
+    padding-top: var(--largeSpacing);
+  }
+}
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.modal-close {
+  position: absolute;
+  right: 1vw;
+  top: var(--smallSpacing);
+  color: var(--lightGreyColor);
+  font-size: var(--typeTitle6Size);
+  cursor: pointer;
+}
