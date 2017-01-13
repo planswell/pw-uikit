@@ -120,7 +120,9 @@
         "em",
         "rem",
         "%",
-        "s"
+        "s",
+        "vh",
+        "vw"
       ],
       "color-hex-case": "upper",
       "string-quotes": "single",
