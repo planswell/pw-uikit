@@ -1,0 +1,5 @@
+"" Put vim config that would be useful to all us vim-using devs here
+
+"" neomake is dumb, multi-filetype config must be done for all filetypes
+let b:neomake_javascript_eslint_exe = 'npm'
+let b:neomake_javascript_eslint_args = ['run', 'lint:eslint', '--', '-f', 'compact']
