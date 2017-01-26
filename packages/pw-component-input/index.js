@@ -42,7 +42,9 @@ class Input extends React.Component {
     type: 'text',
   }
 
-  handleChange = e => this.props.onChange(e.target.value);
+  isNumber = () => this.props.type === 'number';
+
+  handleChange = e => this.props.onChange(this.isNumber() ? Number(e.target.value) : e.target.value);
 
   render() {
     const { mask, appearance } = this.props;

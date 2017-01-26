@@ -24,4 +24,11 @@ describe('<Input />', () => {
     expect(wrapper.name()).toEqual('input');
     expect(wrapper.hasClass('invalid')).toBe(true);
   });
+
+  it('formats onChange param as a number when type is "number"', () => {
+    let value;
+    const wrapper = shallow(<Input type="number" onChange={v => (value = v)} />);
+    wrapper.simulate('change', { target: { value: '42' } }); // simulate change with string value
+    expect(value).toBe(42); // expect to be given numeric value
+  });
 });
