@@ -42,7 +42,7 @@ describe('<Link>', () => {
       <Link to={href}><span>{text}</span></Link>
     )).toEqual(true);
     const classNames = renderedComponent.props().className.split(/\s+/);
-    expect(classNames).toContain('button');
+    expect(classNames).toContain('button-default');
     expect(classNames).toContain('button-common');
   });
 });

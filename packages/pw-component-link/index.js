@@ -5,8 +5,9 @@ import cssStyles from './style.css';
 
 const { PropTypes } = React;
 
-const OurLink = ({ button, children, styles, to, ...props }) => {
-  const styleName = button ? 'button' : 'link';
+const OurLink = ({ button, children, styles, to, type, ...props }) => {
+  const buttonStyles = type ? `button-${type}` : 'button-default';
+  const styleName = button ? buttonStyles : 'link';
   const childrenContainer = <span styleName="inner">{children}</span>;
 
   const routerLink = () => (
@@ -26,6 +27,10 @@ const OurLink = ({ button, children, styles, to, ...props }) => {
 
 OurLink.propTypes = {
   button: PropTypes.bool,
+  type: PropTypes.oneOf([
+    'default',
+    'primary',
+  ]),
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node,
