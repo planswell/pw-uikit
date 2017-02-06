@@ -1,7 +1,7 @@
 {
   "name": "pw-component-input",
   "description": "Planswell input Component",
-  "version": "2.3.3",
+  "version": "2.4.0",
   "main": "index.js",
   "author": "Paul Iannazzo <piannazzo@planswell.ca>",
   "license": "MIT",
