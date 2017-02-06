@@ -10,3 +10,4 @@ import './sticky-bar';
 import './checkbox';
 import './dropdown';
 import './modal.js';
+import './textarea.js';
