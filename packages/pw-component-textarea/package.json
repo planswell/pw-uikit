@@ -1,7 +1,7 @@
 {
   "name": "pw-component-textarea",
   "description": "Planswell Textarea Component",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "author": "Izzie Colpitts-Campbell <izzie@planswell.ca>",
   "license": "MIT",
