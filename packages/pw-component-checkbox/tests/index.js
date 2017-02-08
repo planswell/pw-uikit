@@ -19,4 +19,13 @@ describe('<Checkbox />', () => {
 
     expect(rendered.containsMatchingElement(<input type="checkbox" defaultChecked />)).toEqual(true);
   });
+  it('handles changes like React does for inputs', () => {
+    let returns;
+    const handleChange = (value, event) => (returns = { value, event });
+    const rendered = shallow(<Checkbox label="yes" onChange={handleChange} />);
+    const event = { target: { checked: true } };
+    rendered.find('input').simulate('change', event);
+    expect(returns.value).toBe(event.target.checked);
+    expect(returns.event).toBe(event);
+  });
 });
