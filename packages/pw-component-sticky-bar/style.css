@@ -5,7 +5,7 @@
   display: flex;
   position: fixed;
   align-items: center;
-  padding: var(--tinySpacing) var(--smallSpacing);
+  padding: var(--smallSpacing) var(--smallSpacing);
   width: 100%;
   background-color: var(--whiteBackgroundColor);
 }
