@@ -1,8 +1,7 @@
 @import 'pw-base-css/vars.css';
 
 .base {
-  @apply --default-shadow;
-
+  border-bottom: var(--defaultBorder);
   display: flex;
   position: fixed;
   align-items: center;
