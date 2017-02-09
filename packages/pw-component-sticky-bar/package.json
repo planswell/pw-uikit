@@ -1,7 +1,7 @@
 {
   "name": "@planswell/pw-component-sticky-bar",
   "description": "Planswell Sticky Bar Component",
-  "version": "1.1.2",
+  "version": "1.1.4",
   "main": "index.js",
   "author": "Izzie <izzie@planswell.ca>",
   "license": "MIT",
