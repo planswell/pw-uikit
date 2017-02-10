@@ -1,14 +1,14 @@
 {
   "name": "@planswell/pw-component-sticky-bar",
   "description": "Planswell Sticky Bar Component",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "main": "index.js",
   "author": "Izzie <izzie@planswell.ca>",
   "license": "MIT",
   "dependencies": {
     "lodash": "^4.15.0",
     "react": "^15.3.0",
-    "pw-base-css": "^2.6.3"
+    "pw-base-css": "^2.6.4"
   },
   "devDependencies": {
     "react-dom": "^15.3.0"

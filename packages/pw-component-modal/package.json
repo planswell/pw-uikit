@@ -1,13 +1,13 @@
 {
   "name": "pw-component-modal",
   "description": "Planswell Modal Component",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "index.js",
   "author": "Izzie Colpitts-Campbell <izzie@planswell.ca>",
   "license": "MIT",
   "dependencies": {
-    "pw-base-css": "^2.6.3",
-    "pw-component-icon": "^4.4.0",
+    "pw-base-css": "^2.6.4",
+    "pw-component-icon": "^4.4.1",
     "react": "^15.3.0",
     "react-modal": "^1.6.5"
   },
