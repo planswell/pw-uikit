@@ -61,6 +61,8 @@
   --iconBulletPoint: '\e804';
   --iconCircleThin: '\e804'; /* deprecated */
   --iconHandAndCoin: '\e805';
+  --iconChatBubble: '\e806';
+  --iconMoneyBag: '\e807';
   --iconFinanceDetails: '\e808';
   --iconCoinUpArrow: '\e809';
   --iconHouse: '\e80a';
@@ -72,7 +74,7 @@
   --iconArrow: '\e810';
   --iconCheckInCircle: '\e811';
   --iconCross: '\e812';
-  --iconChatBubble: '\e806';
+  --iconThreeLineMenu: '\e813';
 
   --default-icon-size { font-size: var(--phi)em; } /* stylelint-disable-line */
 

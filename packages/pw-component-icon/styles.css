@@ -26,8 +26,10 @@
 .icon-error::before { content: var(--iconError); }
 .icon-credit-card::before { content: var(--iconCreditCard); }
 .icon-handset::before { content: var(--iconHandset); }
-.icon-hand-and-coin::before { content: var(--iconHandAndCoin); }
 .icon-bullet-point::before { content: var(--iconBulletPoint); }
+.icon-hand-and-coin::before { content: var(--iconHandAndCoin); }
+.icon-chat-bubble::before { content: var(--iconChatBubble); }
+.icon-money-bag::before { content: var(--iconMoneyBag); }
 .icon-finance-details::before { content: var(--iconFinanceDetails); }
 .icon-coin-up-arrow::before { content: var(--iconCoinUpArrow); }
 .icon-house::before { content: var(--iconHouse); }
@@ -39,4 +41,4 @@
 .icon-arrow::before { content: var(--iconArrow); }
 .icon-check-in-circle::before { content: var(--iconCheckInCircle); }
 .icon-cross::before { content: var(--iconCross); }
-.icon-chat-bubble::before { content: var(--iconChatBubble); }
+.icon-three-line-menu::before { content: var(--iconThreeLineMenu); }
