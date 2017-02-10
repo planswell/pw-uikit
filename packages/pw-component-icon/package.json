@@ -1,12 +1,12 @@
 {
   "name": "pw-component-icon",
   "description": "Planswell Icon Component",
-  "version": "4.3.1",
+  "version": "4.4.0",
   "main": "index.js",
   "author": "Quinn Strahl <qstrahl@planswell.ca>",
   "license": "MIT",
   "dependencies": {
-    "pw-base-css": "^2.6.2",
+    "pw-base-css": "^2.6.3",
     "react": "^15.3.0"
   },
   "devDependencies": {

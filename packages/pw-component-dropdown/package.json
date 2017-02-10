@@ -1,13 +1,13 @@
 {
   "name": "pw-component-dropdown",
   "description": "Planswell Dropdown Component",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "main": "index.js",
   "author": "Izzie Colpitts-Campbell <izzieccampbell@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "react": "^15.3.0",
-    "pw-base-css": "*"
+    "pw-base-css": "^2.6.3"
   },
   "devDependencies": {
     "react-dom": "^15.3.0"
