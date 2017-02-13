@@ -5,10 +5,8 @@
   display: block;
   width: 100%;
   color: var(--blackTypeColor);
-  background-color: transparent;
   padding: var(--defaultPadding);
   @apply --default-border-and-radius;
-  @apply --placeholder-color;
 }
 
 .invalid {
