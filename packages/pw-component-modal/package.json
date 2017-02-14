@@ -1,7 +1,7 @@
 {
   "name": "pw-component-modal",
   "description": "Planswell Modal Component",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "index.js",
   "author": "Izzie Colpitts-Campbell <izzie@planswell.ca>",
   "license": "MIT",
