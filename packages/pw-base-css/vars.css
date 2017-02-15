@@ -95,7 +95,7 @@
 
   --defaultPadding: var(--smallSpacing);
   --defaultBorder: 0.1rem solid var(--lightGreyColor);
-  --defaultBorderRadius: 0.4rem;
+  --defaultBorderRadius: 0.8rem;
   --defaultInputHeight: 3.4rem;
 
   --default-border-and-radius {
