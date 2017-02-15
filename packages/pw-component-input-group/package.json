@@ -1,13 +1,13 @@
 {
   "name": "pw-component-input-group",
   "description": "Planswell Input Group Component",
-  "version": "2.3.3",
+  "version": "2.3.6",
   "main": "lib/index.js",
   "author": "Paul Iannazzo <piannazzo@planswell.ca>",
   "license": "MIT",
   "dependencies": {
     "lodash": "^4.15.0",
-    "pw-base-css": "^2.6.4",
+    "pw-base-css": "^2.6.7",
     "react": "^15.3.0"
   },
   "devDependencies": {
