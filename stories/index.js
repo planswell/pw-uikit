@@ -11,3 +11,4 @@ import './checkbox';
 import './dropdown';
 import './modal.js';
 import './textarea.js';
+import './tabs';
