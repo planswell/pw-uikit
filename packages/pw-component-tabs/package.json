@@ -1,7 +1,7 @@
 {
   "name": "pw-component-tabs",
   "description": "Planswell Tabs Component",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "main": "index.js",
   "author": "Quinn Strahl <qstrahl@planswell.ca>",
   "license": "MIT",

@@ -52,6 +52,7 @@ export class Tabs extends React.Component {
       const labelProps = {
         onClick: () => this.setState({ selected: index }),
         styleName: index === selected ? 'tab-label-selected' : 'tab-label',
+        key: index,
       };
 
       // Return our new label
