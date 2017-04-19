@@ -1,0 +1,30 @@
+@import 'pw-base-css/vars.css';
+
+.base {
+  composes: default from 'pw-base-css/typography.css';
+  display: flex;
+  flex-wrap: wrap;
+  color: var(--blackTypeColor);
+}
+
+.item {
+  display: flex;
+  flex-basis: 100%;
+  margin: var(--tinySpacing) 0;
+
+  & > :first-child {
+    flex-basis: auto;
+    flex-grow: 1;
+  }
+}
+
+.remove {
+  border: 0;
+  color: var(--redFeatureColor);
+  padding: var(--smallSpacing);
+}
+
+.add {
+  margin-top: var(--tinySpacing);
+  flex-basis: 100%;
+}

@@ -1,4 +1,5 @@
 import './button';
+import './dynamic-list';
 import './input';
 import './password';
 import './input-group';
