@@ -73,3 +73,27 @@
     background-color: color(var(--greenFeatureColor) shade(20%));
   }
 }
+
+.danger {
+  composes: base;
+  color: var(--whiteTypeColor);
+  background-color: var(--redFeatureColor);
+  border: none;
+
+  &:hover {
+    background-color: color(var(--redFeatureColor) tint(20%));
+  }
+
+  &:focus {
+    background-color: color(var(--redFeatureColor) tint(20%));
+  }
+
+  &:disabled {
+    background-color: color(var(--redFeatureColor) tint(40%));
+    cursor: not-allowed;
+  }
+
+  &:active {
+    background-color: color(var(--redFeatureColor) shade(20%));
+  }
+}
