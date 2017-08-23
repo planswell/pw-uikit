@@ -27,7 +27,7 @@ const user = process.argv[3] || gitUser || 'Planswell';
 const email = process.argv[4] || gitEmail || 'dev@planswell.ca';
 
 const src = path.join(__dirname, '/template');
-const dest = path.join(__dirname, `/../../packages/pw-component-${name}`);
+const dest = path.join(__dirname, `/../../components/${name}`);
 
 try {
   fs.statSync(dest);

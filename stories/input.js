@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@kadira/storybook';
-import Input from './../packages/pw-component-input';
+import Input from '../components/input';
 
 const id = () => {};
 

@@ -1,0 +1,21 @@
+@import '../../css/vars.css';
+
+.base {
+  @apply --default-border-and-radius;
+
+  & > * {
+    border-radius: 0;
+    margin-bottom: 0;
+    border: 0;
+    width: 100%;
+  }
+
+  & > *:not(:last-child) {
+    border-bottom: var(--defaultBorder);
+  }
+
+  & > *:last-child {
+    border-bottom: 0;
+    border-radius: initial initial var(--defaultBorderRadius) var(--defaultBorderRadius);
+  }
+}

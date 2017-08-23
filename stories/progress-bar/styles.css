@@ -1,4 +1,4 @@
-@import '../../packages/pw-base-css/vars.css';
+@import '../../css/vars.css';
 
 .bg-aqua {
   background: var(--aquaFeatureColor);

@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@kadira/storybook';
-import ProgressBar from '../../packages/pw-component-progress-bar';
+import ProgressBar from '../../components/progress-bar';
 import styles from './styles.css';
 import cssModules from 'react-css-modules';
 

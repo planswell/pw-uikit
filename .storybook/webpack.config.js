@@ -12,7 +12,11 @@ module.exports = {
     loaders: [
       {
         test: /\.css?$/,
-        include: path.resolve(__dirname, '../packages'),
+        include: path.resolve(__dirname, '../css'),
+        loader: 'style-loader!css-loader?localIdentName=[local]__[path][name]__[hash:base64:5]&modules&importLoaders=1!postcss-loader',
+      }, {
+        test: /\.css?$/,
+        include: path.resolve(__dirname, '../components'),
         loader: 'style-loader!css-loader?localIdentName=[local]__[path][name]__[hash:base64:5]&modules&importLoaders=1!postcss-loader',
       }, {
         test: /\.css$/,

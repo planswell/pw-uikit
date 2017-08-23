@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@kadira/storybook';
-import Textarea from './../packages/pw-component-textarea';
+import Textarea from '../components/textarea';
 
 storiesOf('Textarea', module)
   .add('default', () => (

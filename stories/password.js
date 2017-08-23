@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@kadira/storybook';
-import Password from './../packages/pw-component-showable-password';
+import Password from '../components/showable-password';
 
 storiesOf('Password', module)
   .add('default', () => (

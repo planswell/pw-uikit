@@ -1,0 +1,13 @@
+@import '../../css/vars.css';
+
+.base {
+  user-select: none;
+  line-height: 1;
+
+  & > svg {
+    display: inline-block;
+    color: var(--greenFeatureColor);
+    max-width: 100%;
+    max-height: 100%;
+  }
+}

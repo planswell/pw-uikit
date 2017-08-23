@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@kadira/storybook';
-import StickyBar from './../packages/pw-component-sticky-bar';
+import StickyBar from '../components/sticky-bar';
 
 storiesOf('StickyBar', module)
   .add('default', () => (

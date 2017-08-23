@@ -1,0 +1,54 @@
+@import '../../css/vars.css';
+
+.base {
+  composes: default from '../../css/typography.css';
+  @apply --default-border-and-radius;
+
+  display: flex;
+  background: var(--whiteBackgroundColor);
+  color: var(--blackTypeColor);
+
+  & input {
+    padding-right: 0;
+    border: none;
+  }
+}
+
+/* awesome as in from font awesome */
+._addon-awesome {
+  display: flex;
+  align-items: center;
+  color: var(--greyTypeColor);
+  padding: 0 var(--smallSpacing);
+  cursor: pointer;
+  user-select: none;
+
+  &::before {
+    @apply --default-icon-size;
+
+    font-family: fontello;
+    margin-right: var(--tinySpacing);
+
+    /* This is padded down due to the font not being totally vertically aligned, not a CSS problem */
+    padding-top: 0.1rem;
+    transition: color 0.1s;
+  }
+}
+
+.addon-password-hiding {
+  composes: _addon-awesome;
+
+  &::before {
+    content: var(--iconBulletPoint);
+    color: var(--lightBackgroundColor);
+  }
+}
+
+.addon-password-showing {
+  composes: _addon-awesome;
+
+  &::before {
+    content: var(--iconCheckInCircle);
+    color: var(--greenFeatureColor);
+  }
+}

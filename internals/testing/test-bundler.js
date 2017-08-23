@@ -8,5 +8,5 @@ import chaiEnzyme from 'chai-enzyme';
 chai.use(chaiEnzyme());
 
 // Include all .js files under `packages/**/tests/` This is for isparta code coverage
-const context = require.context('../../packages/', true, /\/tests\/.*\.js$/);
+const context = require.context('../../components/', true, /\/tests\/.*\.js$/);
 context.keys().forEach(context);

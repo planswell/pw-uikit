@@ -1,0 +1,11 @@
+@import '../../css/vars.css';
+
+.base {
+  border-bottom: var(--defaultBorder);
+  display: flex;
+  position: fixed;
+  align-items: center;
+  padding: var(--smallSpacing) var(--smallSpacing);
+  width: 100%;
+  background-color: var(--whiteBackgroundColor);
+}

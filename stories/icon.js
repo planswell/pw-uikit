@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@kadira/storybook';
-import Icon from './../packages/pw-component-icon';
+import Icon from '../components/icon';
 
 storiesOf('Icon', module)
   .add('envelope', () => <Icon name="envelope" />)
