@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { storiesOf } from '@kadira/storybook';
-import DynamicList from '../packages/pw-component-dynamic-list';
-import Input from '../packages/pw-component-input';
+import DynamicList from '../components/dynamic-list';
+import Input from '../components/input';
 import { uniqueId } from 'lodash';
 
 const newItem = text => ({ text, key: uniqueId() });

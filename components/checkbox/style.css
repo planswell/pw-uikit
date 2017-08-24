@@ -1,0 +1,34 @@
+@import '../../css/vars.css';
+
+.stealthy {
+  display: none;
+}
+
+.base {
+  composes: default from '../../css/typography.css';
+  display: block;
+  padding: var(--defaultPadding);
+}
+
+.label {
+  color: var(--greyFeatureColor);
+}
+
+.icon {
+  composes: icon from '../icon/styles.css';
+  margin-right: var(--tinySpacing);
+
+  &::before {
+    content: var(--iconCircleThin);
+  }
+}
+
+.stealthy:checked + .label {
+  color: var(--greenFeatureColor);
+
+  & .icon {
+    &::before {
+      content: var(--iconCheckInCircle);
+    }
+  }
+}

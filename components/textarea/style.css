@@ -1,0 +1,16 @@
+@import '../../css/vars.css';
+
+.default {
+  composes: default from '../../css/typography.css';
+  display: block;
+  width: 100%;
+  color: var(--blackTypeColor);
+  padding: var(--defaultPadding);
+  @apply --default-border-and-radius;
+}
+
+.invalid {
+  composes: default;
+  background-color: var(--pinkBackgroundColor);
+  border-color: var(--pinkFeatureColor);
+}

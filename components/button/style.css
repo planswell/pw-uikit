@@ -1,0 +1,99 @@
+@import '../../css/vars.css';
+
+.icon-left {
+  margin-right: 1rem;
+}
+
+.icon-right {
+  margin-left: 1rem;
+}
+
+.base {
+  composes: default from '../../css/typography.css';
+  composes: default from '../../css/borders.css';
+  composes: circle-radius from '../../css/borders.css';
+  display: inline-block;
+  margin: initial;
+  font-weight: 600;
+  text-align: center;
+  line-height: 1;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  padding: var(--defaultPadding) var(--semiSpacing);
+  user-select: none;
+  transition: background-color 0.2s;
+}
+
+.default {
+  composes: base;
+  color: var(--greyTypeColor);
+  background-color: var(--transparentColor);
+
+  &:active {
+    background-color: color(var(--transparentColor) shade(20%));
+  }
+
+  &:hover {
+    background-color: color(var(--transparentColor) tint(20%));
+  }
+
+  &:focus {
+    background-color: color(var(--transparentColor) tint(20%));
+  }
+
+  &:disabled {
+    color: color(var(--greyTypeColor) tint(40%));
+    background-color: color(var(--transparentColor) tint(40%));
+    cursor: not-allowed;
+  }
+}
+
+.primary {
+  composes: base;
+  color: var(--whiteTypeColor);
+  background-color: var(--greenFeatureColor);
+  border: none;
+
+  &:hover {
+    background-color: color(var(--greenFeatureColor) tint(20%));
+  }
+
+  &:focus {
+    background-color: color(var(--greenFeatureColor) tint(20%));
+  }
+
+  &:disabled {
+    background-color: color(var(--greenFeatureColor) tint(40%));
+    cursor: not-allowed;
+  }
+
+  &:active {
+    background-color: color(var(--greenFeatureColor) shade(20%));
+  }
+}
+
+.danger {
+  composes: base;
+  color: var(--whiteTypeColor);
+  background-color: var(--redButtonColor);
+  border: none;
+
+  &:hover {
+    background-color: color(var(--redButtonColor) tint(20%));
+  }
+
+  &:focus {
+    background-color: color(var(--redButtonColor) tint(20%));
+  }
+
+  &:disabled {
+    background-color: color(var(--redButtonColor) tint(40%));
+    cursor: not-allowed;
+  }
+
+  &:active {
+    background-color: color(var(--redButtonColor) shade(20%));
+  }
+}

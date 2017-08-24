@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@kadira/storybook';
-import Dropdown from './../packages/pw-component-dropdown';
+import Dropdown from '../components/dropdown';
 
 const values = [{
   label: 'travel',

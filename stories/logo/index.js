@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@kadira/storybook';
-import Logo from '../../packages/pw-component-logo'; // '../index.js';
+import Logo from '../../components/logo'; // '../index.js';
 import styles from './style.css';
 import cssModules from 'react-css-modules';
 

@@ -1,0 +1,109 @@
+:root {
+  --sqRootOfTwo: 1.4142135623731;
+  --pi: 3.1415926535897932384626433832;
+  --tau: 6.283185307179586;
+  --phi: 1.618033988749894848204586834;
+
+  /* colors */
+
+  --transparentColor: transparent;
+  --greyColor: #747480;
+  --lightGreyColor: #BBBDBF;
+  --greenFeatureColor: #2EAA51;
+  --blueFeatureColor: #0F84DB;
+  --magentaFeatureColor: #881866;
+  --purpleFeatureColor: #8C50B2;
+  --yellowFeatureColor: #0F84DB;
+  --redFeatureColor: #DF1765;
+  --pinkFeatureColor: #F70058;
+  --aquaFeatureColor: #00A2AD;
+  --blackTypeColor: #282828;
+  --greyTypeColor: var(--greyColor);
+  --placeholderTypeColor: var(--greyColor);
+  --greyFeatureColor: var(--greyColor);
+  --greyBoarderColor: var(--greyColor);
+  --lightBackgroundColor: #F0F4F7;
+  --whiteTypeColor: #FFF;
+  --whiteBackgroundColor: #FFF;
+  --yellowBackgroundColor: #F6F4BF;
+  --pinkBackgroundColor: #FFE4E2;
+  --redButtonColor: #E56430;
+
+  /* spacing */
+
+  --minuteSpacing: 0.5rem;
+  --tinySpacing: 0.8rem;
+  --smallSpacing: 1.6rem;
+  --defaultSpacing: 2.4rem;
+  --semiSpacing: 3.2rem;
+  --largeSpacing: 4.8rem;
+  --extraLargeSpacing: 6.4rem;
+
+  /* type */
+
+  --typeTitle1Size: 5.6rem;
+  --typeTitle2Size: 4.2rem;
+  --typeTitle3Size: 3.2rem;
+  --typeTitle4Size: 2.8rem;
+  --typeTitle5Size: 2.4rem;
+  --typeTitle6Size: 2.2rem;
+  --typeTitle7Size: 2rem;
+  --typeLargeSize: 2rem;
+  --typeDefaultSize: 1.6rem;
+  --typeSmallSize: 1.4rem;
+  --typeTinySize: 1.2rem;
+  --typeLegendSize: 1rem;
+
+  /* icons */
+  --iconEnvelope: '\e800';
+  --iconError: '\e801';
+  --iconCreditCard: '\e802';
+  --iconHandset: '\e803';
+  --iconBulletPoint: '\e804';
+  --iconCircleThin: '\e804'; /* deprecated */
+  --iconHandAndCoin: '\e805';
+  --iconChatBubble: '\e806';
+  --iconMoneyBag: '\e807';
+  --iconFinanceDetails: '\e808';
+  --iconCoinUpArrow: '\e809';
+  --iconHouse: '\e80a';
+  --iconLeftArrowCircle: '\e80b';
+  --iconMortarboard: '\e80c';
+  --iconSmile: '\e80d';
+  --iconCheck: '\e80e';
+  --iconUmbrella: '\e80f';
+  --iconArrow: '\e810';
+  --iconCheckInCircle: '\e811';
+  --iconCross: '\e812';
+  --iconThreeLineMenu: '\e813';
+
+  --default-icon-size { font-size: var(--phi)em; } /* stylelint-disable-line */
+
+  --default-circle-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--lightBackgroundColor);
+    border-radius: 50%;
+    width: var(--extraLargeSpacing);
+    height: var(--extraLargeSpacing);
+    font-size: var(--typeTitle3Size);
+  }
+
+  /* other */
+
+  --default-shadow { box-shadow: 0 0.5rem 0.5rem var(--lightBackgroundColor); }
+
+  --defaultPadding: var(--smallSpacing);
+  --defaultBorder: 0.1rem solid var(--lightGreyColor);
+  --defaultBorderRadius: 0.8rem;
+  --defaultInputHeight: 3.4rem;
+
+  --default-border-and-radius {
+    border: var(--defaultBorder);
+    border-radius: var(--defaultBorderRadius);
+  }
+
+  /* component defaults */
+  --placeholder-color: { &::placeholder { color: var(--placeholderTypeColor); } }
+}

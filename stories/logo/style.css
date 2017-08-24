@@ -1,4 +1,4 @@
-@import '../../packages/pw-base-css/vars.css';
+@import '../../css/vars.css';
 
 .red svg {
   color: var(--redFeatureColor);
@@ -17,9 +17,9 @@
 }
 
 .aqua svg {
-  color: var(--aquaFeatureColor)
+  color: var(--aquaFeatureColor);
 }
 
 .yellow svg {
-  color: var(--yellowFeatureColor)
+  color: var(--yellowFeatureColor);
 }

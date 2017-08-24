@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@kadira/storybook';
-import Link from '../packages/pw-component-link';
+import Link from '../components/link';
 
 storiesOf('Link', module)
   .add('default', () => (

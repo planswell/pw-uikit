@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@kadira/storybook';
-import Tabs from '../packages/pw-component-tabs';
+import Tabs from '../components/tabs';
 
 storiesOf('Tabs', module)
   .add('tabs', () => <Tabs>

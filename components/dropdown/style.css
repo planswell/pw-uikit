@@ -1,0 +1,14 @@
+@import '../../css/vars.css';
+
+.base {
+  composes: default from '../../css/typography.css';
+  display: block;
+  width: 100%;
+  color: var(--blackTypeColor);
+  background-color: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: var(--defaultPadding);
+  @apply --default-border-and-radius;
+}

@@ -1,8 +1,8 @@
 import React from 'react';
 import { storiesOf } from '@kadira/storybook';
-import Input from './../packages/pw-component-input';
-import Password from './../packages/pw-component-showable-password';
-import InputGroup from './../packages/pw-component-input-group';
+import Input from '../components/input';
+import Password from '../components/showable-password';
+import InputGroup from '../components/input-group';
 
 
 storiesOf('InputGroup', module)
