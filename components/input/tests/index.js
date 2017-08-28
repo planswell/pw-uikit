@@ -16,12 +16,12 @@ describe('<Input />', () => {
 // seems to be enzyme / babel related.
 // Error: Expected { default: [Function: MaskedInput] } to equal 'MaskedInput'
 //     at assert
-  //
-  // it('renders MaskedInput when `mask` props is provided', () => {
-  //   const wrapper = shallow(<Input mask="111-111-1111" />);
-  //
-  //   expect(wrapper.name()).toEqual('MaskedInput');
-  // });
+
+  it('renders MaskedInput when `mask` props is provided', () => {
+    const wrapper = shallow(<Input mask="111-111-1111" />);
+
+    expect(wrapper.name()).toEqual('MaskedInput');
+  });
 
   it('renders when appearance is applied', () => {
     const wrapper = shallow(<Input appearance="invalid" />);

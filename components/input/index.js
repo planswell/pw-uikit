@@ -2,7 +2,10 @@ const React = require('react');
 const cssModules = require('react-css-modules');
 const cssStyles = require('./style.css');
 const { omit } = require('lodash');
-const MaskedInput = require('react-maskedinput');
+
+// need to do this as per https://github.com/insin/react-maskedinput/issues/104#issuecomment-315752541
+const MaskedInputImported = require('react-maskedinput');
+const MaskedInput = MaskedInputImported.default || MaskedInputImported;
 
 const { PropTypes } = React;
 
