@@ -1,8 +1,8 @@
-import React from 'react';
-import cssModules from 'react-css-modules';
-import cssStyles from './style.css';
-import { omit } from 'lodash';
-import MaskedInput from 'react-maskedinput';
+const React = require('react');
+const cssModules = require('react-css-modules');
+const cssStyles = require('./style.css');
+const { omit } = require('lodash');
+const MaskedInput = require('react-maskedinput');
 
 const { PropTypes } = React;
 
@@ -60,4 +60,4 @@ class Input extends React.Component {
   }
 }
 
-export default cssModules(Input, cssStyles);
+module.exports = cssModules(Input, cssStyles);

@@ -1,8 +1,9 @@
-import React, { Component } from 'react';
-import { storiesOf } from '@kadira/storybook';
-import DynamicList from '../components/dynamic-list';
-import Input from '../components/input';
-import { uniqueId } from 'lodash';
+const React = require('react');
+const { Component } = React;
+const { storiesOf } = require('@kadira/storybook');
+const DynamicList = require('../components/dynamic-list');
+const Input = require('../components/input');
+const { uniqueId } = require('lodash');
 
 const newItem = text => ({ text, key: uniqueId() });
 

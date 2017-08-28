@@ -1,6 +1,6 @@
-import React from 'react';
-import { storiesOf } from '@kadira/storybook';
-import Link from '../components/link';
+const React = require('react');
+const { storiesOf } = require('@kadira/storybook');
+const Link = require('../components/link');
 
 storiesOf('Link', module)
   .add('default', () => (

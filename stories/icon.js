@@ -1,6 +1,6 @@
-import React from 'react';
-import { storiesOf } from '@kadira/storybook';
-import Icon from '../components/icon';
+const React = require('react');
+const { storiesOf } = require('@kadira/storybook');
+const Icon = require('../components/icon');
 
 storiesOf('Icon', module)
   .add('envelope', () => <Icon name="envelope" />)

@@ -1,8 +1,8 @@
-import OurLink from '../index';
-import expect from 'expect';
-import { shallow } from 'enzyme';
-import React from 'react';
-import { Link } from 'react-router';
+const OurLink = require('../index');
+const expect = require('expect');
+const { shallow } = require('enzyme');
+const React = require('react');
+const { Link } = require('react-router');
 
 describe('<Link>', () => {
   it('renders like a text link', () => {

@@ -1,6 +1,7 @@
-import React, { PropTypes } from 'react';
-import cssModules from 'react-css-modules';
-import styles from './style.css';
+const React = require('react');
+const { PropTypes } = React;
+const cssModules = require('react-css-modules');
+const styles = require('./style.css');
 
 function %nameclasscase%(props) {
   return (
@@ -13,4 +14,4 @@ function %nameclasscase%(props) {
   foo: PropTypes.string,
 };
 
-export default cssModules(%nameclasscase%, styles);
+module.exports = cssModules(%nameclasscase%, styles);

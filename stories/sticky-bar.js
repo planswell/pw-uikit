@@ -1,6 +1,6 @@
-import React from 'react';
-import { storiesOf } from '@kadira/storybook';
-import StickyBar from '../components/sticky-bar';
+const React = require('react');
+const { storiesOf } = require('@kadira/storybook');
+const StickyBar = require('../components/sticky-bar');
 
 storiesOf('StickyBar', module)
   .add('default', () => (

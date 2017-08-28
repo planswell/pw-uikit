@@ -1,7 +1,8 @@
-import React, { PropTypes } from 'react';
-import cssModules from 'react-css-modules';
-import styles from './style.css';
-import { omit } from 'lodash';
+const React = require('react');
+const { PropTypes } = React;
+const cssModules = require('react-css-modules');
+const styles = require('./style.css');
+const { omit } = require('lodash');
 
 function Textarea({ appearance, ...props }) {
   const passthroughProps = omit(props, ['styles', 'appearance']);
@@ -18,4 +19,4 @@ Textarea.defaultProps = {
   appearance: 'default',
 };
 
-export default cssModules(Textarea, styles);
+module.exports = cssModules(Textarea, styles);

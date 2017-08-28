@@ -1,6 +1,6 @@
-import React from 'react';
-import { storiesOf } from '@kadira/storybook';
-import Checkbox from '../components/checkbox';
+const React = require('react');
+const { storiesOf } = require('@kadira/storybook');
+const Checkbox = require('../components/checkbox');
 
 storiesOf('Checkbox', module)
   .add('default un-checked', () => <Checkbox label="Yes" />)

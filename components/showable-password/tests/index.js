@@ -1,9 +1,8 @@
-import Password from '../index';
-import Input from '../../input';
-
-import expect from 'expect';
-import { shallow } from 'enzyme';
-import React from 'react';
+const Password = require('../index');
+const Input = require('../../input');
+const expect = require('expect');
+const { shallow } = require('enzyme');
+const React = require('react');
 
 describe('<Password />', () => {
   it('renders with placeholder', () => {

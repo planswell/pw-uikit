@@ -1,9 +1,8 @@
-import Dropdown from '../index';
-
-import expect from 'expect';
-import { shallow } from 'enzyme';
-import React from 'react';
-import { omit } from 'lodash';
+const Dropdown = require('../index');
+const expect = require('expect');
+const { shallow } = require('enzyme');
+const React = require('react');
+const { omit } = require('lodash');
 
 const values = [{
   label: 'travel',

@@ -1,7 +1,8 @@
-import React, { Children, PropTypes } from 'react';
-import cssModules from 'react-css-modules';
-import styles from './style.css';
-import { omit } from 'lodash';
+const React = require('react');
+const { Children, PropTypes } = React;
+const cssModules = require('react-css-modules');
+const styles = require('./style.css');
+const { omit } = require('lodash');
 
 const isLabel = node => node.type === 'tab-label';
 const notLabel = node => node.type !== 'tab-label';
@@ -23,7 +24,7 @@ const isTab = node => node.type === 'tab';
  *   ...
  * </Tabs>
  */
-export class Tabs extends React.Component {
+class Tabs extends React.Component {
   static propTypes = {
     className: PropTypes.string,
     children: PropTypes.node,
@@ -71,4 +72,4 @@ export class Tabs extends React.Component {
   }
 }
 
-export default cssModules(Tabs, styles, { allowMultiple: true });
+module.exports = cssModules(Tabs, styles, { allowMultiple: true });

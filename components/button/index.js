@@ -1,8 +1,9 @@
-import React, { PropTypes } from 'react';
-import cssModules from 'react-css-modules';
-import styles from './style.css';
-import { omit } from 'lodash';
-import Icon from '../icon';
+const React = require('react');
+const { PropTypes } = React;
+const cssModules = require('react-css-modules');
+const styles = require('./style.css');
+const { omit } = require('lodash');
+const Icon = require('../icon');
 
 class Button extends React.Component {
   static propTypes = {
@@ -58,4 +59,4 @@ class Button extends React.Component {
   }
 }
 
-export default cssModules(Button, styles);
+module.exports = cssModules(Button, styles);

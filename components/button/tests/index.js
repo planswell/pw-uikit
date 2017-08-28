@@ -1,8 +1,7 @@
-import Button from '../index';
-
-import expect from 'expect';
-import { shallow } from 'enzyme';
-import React from 'react';
+const Button = require('../index');
+const expect = require('expect');
+const { shallow } = require('enzyme');
+const React = require('react');
 
 describe('<Button />', () => {
   it('renders', () => {

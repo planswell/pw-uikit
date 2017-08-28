@@ -1,8 +1,8 @@
-import React from 'react';
-import Input from '../input';
-import cssModules from 'react-css-modules';
-import styles from './style.css';
-import { omit } from 'lodash';
+const React = require('react');
+const Input = require('../input');
+const cssModules = require('react-css-modules');
+const styles = require('./style.css');
+const { omit } = require('lodash');
 
 const { PropTypes } = React;
 
@@ -48,4 +48,4 @@ class Password extends React.Component {
   }
 }
 
-export default cssModules(Password, styles);
+module.exports = cssModules(Password, styles);

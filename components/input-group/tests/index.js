@@ -1,8 +1,7 @@
-import InputGroup from '../index';
-
-import expect from 'expect';
-import { shallow } from 'enzyme';
-import React from 'react';
+const InputGroup = require('../index');
+const expect = require('expect');
+const { shallow } = require('enzyme');
+const React = require('react');
 
 describe('<InputGroup />', () => {
   it('renders childrens', () => {
