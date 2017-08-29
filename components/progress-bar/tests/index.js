@@ -1,7 +1,7 @@
-import ProgressBar from '../index';
-import expect from 'expect';
-import { shallow } from 'enzyme';
-import React from 'react';
+const ProgressBar = require('../index');
+const expect = require('expect');
+const { shallow } = require('enzyme');
+const React = require('react');
 
 describe('<ProgressBar />', () => {
   it('renders', () => {

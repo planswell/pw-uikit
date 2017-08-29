@@ -1,7 +1,8 @@
-import React, { PropTypes } from 'react';
-import cssModules from 'react-css-modules';
-import styles from './style.css';
-import { omit } from 'lodash';
+const React = require('react');
+const { PropTypes } = React;
+const cssModules = require('react-css-modules');
+const styles = require('./style.css');
+const { omit } = require('lodash');
 
 function Logo(props) {
   return (
@@ -116,4 +117,4 @@ Logo.propTypes = {
   className: PropTypes.string,
 };
 
-export default cssModules(Logo, styles);
+module.exports = cssModules(Logo, styles);

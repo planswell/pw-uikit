@@ -1,8 +1,8 @@
-import React from 'react';
-import { storiesOf } from '@kadira/storybook';
-import ProgressBar from '../../components/progress-bar';
-import styles from './styles.css';
-import cssModules from 'react-css-modules';
+const React = require('react');
+const { storiesOf } = require('@kadira/storybook');
+const ProgressBar = require('../../components/progress-bar');
+const styles = require('./styles.css');
+const cssModules = require('react-css-modules');
 
 storiesOf('ProgressBar', module)
   .add('Light (default)', cssModules(() => (

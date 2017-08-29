@@ -1,9 +1,8 @@
-import React from 'react';
-import { Link } from 'react-router';
-import cssModules from 'react-css-modules';
-import cssStyles from './style.css';
-
+const React = require('react');
 const { PropTypes } = React;
+const { Link } = require('react-router');
+const cssModules = require('react-css-modules');
+const cssStyles = require('./style.css');
 
 const OurLink = ({ button, children, styles, to, type, ...props }) => {
   const buttonStyles = type ? `button-${type}` : 'button-default';
@@ -44,4 +43,4 @@ const cssModuleOptions = {
   allowMultiple: true,
 };
 
-export default cssModules(OurLink, cssStyles, cssModuleOptions);
+module.exports = cssModules(OurLink, cssStyles, cssModuleOptions);

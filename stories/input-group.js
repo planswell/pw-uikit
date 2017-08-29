@@ -1,9 +1,8 @@
-import React from 'react';
-import { storiesOf } from '@kadira/storybook';
-import Input from '../components/input';
-import Password from '../components/showable-password';
-import InputGroup from '../components/input-group';
-
+const React = require('react');
+const { storiesOf } = require('@kadira/storybook');
+const Input = require('../components/input');
+const Password = require('../components/showable-password');
+const InputGroup = require('../components/input-group');
 
 storiesOf('InputGroup', module)
   .add('2 Inputs', () => (

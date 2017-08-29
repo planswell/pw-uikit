@@ -5,10 +5,11 @@
  * Inspired by react-fa, which is far less cool.
  */
 
-import React, { PropTypes } from 'react';
-import styles from './styles.css';
-import cssModules from 'react-css-modules';
-import { omit } from 'lodash';
+const React = require('react');
+const { PropTypes } = React;
+const styles = require('./styles.css');
+const cssModules = require('react-css-modules');
+const { omit } = require('lodash');
 
 const Icon = ({ name, ...props }) => <i {...omit(props, 'styles')} styleName={`icon icon-${name}`} />;
 
@@ -16,6 +17,6 @@ Icon.propTypes = {
   name: PropTypes.string,
 };
 
-export default cssModules(Icon, styles, {
+module.exports = cssModules(Icon, styles, {
   allowMultiple: true,
 });

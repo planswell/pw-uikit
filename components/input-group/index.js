@@ -1,7 +1,8 @@
-import React, { PropTypes } from 'react';
-import cssModules from 'react-css-modules';
-import styles from './style.css';
-import { omit } from 'lodash';
+const React = require('react');
+const { PropTypes } = React;
+const cssModules = require('react-css-modules');
+const styles = require('./style.css');
+const { omit } = require('lodash');
 
 const InputGroup = ({ children, ...props }) =>
   <div {...omit(props, 'styles')} styleName="base">
@@ -16,4 +17,4 @@ InputGroup.propTypes = {
   className: PropTypes.string,
 };
 
-export default cssModules(InputGroup, styles);
+module.exports = cssModules(InputGroup, styles);

@@ -1,6 +1,6 @@
-import React from 'react';
-import { storiesOf } from '@kadira/storybook';
-import Dropdown from '../components/dropdown';
+const React = require('react');
+const { storiesOf } = require('@kadira/storybook');
+const Dropdown = require('../components/dropdown');
 
 const values = [{
   label: 'travel',

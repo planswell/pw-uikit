@@ -1,9 +1,10 @@
-import React, { Children, Component, PropTypes } from 'react';
-import cssModules from 'react-css-modules';
-import styles from './style.css';
-import { omit } from 'lodash';
-import Icon from '../icon';
-import Button from '../button';
+const React = require('react');
+const { Children, Component, PropTypes } = React;
+const cssModules = require('react-css-modules');
+const styles = require('./style.css');
+const { omit } = require('lodash');
+const Icon = require('../icon');
+const Button = require('../button');
 
 // Default text to render in the button which adds a new item
 const defaultAddText = 'Add';
@@ -32,7 +33,7 @@ function decorateListItem(item, index) {
  *   ...
  * </DynamicList>
  */
-export class DynamicList extends Component {
+class DynamicList extends Component {
   static propTypes = {
     add: PropTypes.func,
     remove: PropTypes.func,
@@ -60,4 +61,4 @@ export class DynamicList extends Component {
   }
 }
 
-export default cssModules(DynamicList, styles);
+module.exports = cssModules(DynamicList, styles);

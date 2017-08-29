@@ -1,15 +1,33 @@
-export Button from './components/button';
-export Checkbox from './components/checkbox';
-export Dropdown from './components/dropdown';
-export DynamicList from './components/dynamic-list';
-export Icon from './components/icon';
-export Input from './components/input';
-export InputGroup from './components/input-group';
-export Link from './components/link';
-export Logo from './components/logo';
-export Modal from './components/modal';
-export ProgressBar from './components/progress-bar';
-export ShowablePassword from './components/showable-password';
-export StickyBar from './components/sticky-bar';
-export Tabs from './components/tabs';
-export Textarea from './components/textarea';
+const Button = require('./components/button');
+const Checkbox = require('./components/checkbox');
+const Dropdown = require('./components/dropdown');
+const DynamicList = require('./components/dynamic-list');
+const Icon = require('./components/icon');
+const Input = require('./components/input');
+const InputGroup = require('./components/input-group');
+const Link = require('./components/link');
+const Logo = require('./components/logo');
+const Modal = require('./components/modal');
+const ProgressBar = require('./components/progress-bar');
+const ShowablePassword = require('./components/showable-password');
+const StickyBar = require('./components/sticky-bar');
+const Tabs = require('./components/tabs');
+const Textarea = require('./components/textarea');
+
+module.exports = {
+  Button,
+  Checkbox,
+  Dropdown,
+  DynamicList,
+  Icon,
+  Input,
+  InputGroup,
+  Link,
+  Logo,
+  Modal,
+  ProgressBar,
+  ShowablePassword,
+  StickyBar,
+  Tabs,
+  Textarea,
+};

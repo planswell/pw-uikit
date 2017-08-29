@@ -1,7 +1,8 @@
-import React, { PropTypes } from 'react';
-import cssModules from 'react-css-modules';
-import styles from './style.css';
-import { omit } from 'lodash';
+const React = require('react');
+const { PropTypes } = React;
+const cssModules = require('react-css-modules');
+const styles = require('./style.css');
+const { omit } = require('lodash');
 
 const createOption = option => (
   <option key={`option-${option.label}-${option.value}`} value={option.value}>{option.label || option.value}</option>
@@ -41,4 +42,4 @@ class Dropdown extends React.Component {
 }
 
 
-export default cssModules(Dropdown, styles);
+module.exports = cssModules(Dropdown, styles);

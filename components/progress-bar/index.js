@@ -1,7 +1,8 @@
-import React, { PropTypes } from 'react';
-import cssModules from 'react-css-modules';
-import styles from './style.css';
-import { omit } from 'lodash';
+const React = require('react');
+const { PropTypes } = React;
+const cssModules = require('react-css-modules');
+const styles = require('./style.css');
+const { omit } = require('lodash');
 
 const ProgressBar = ({ children, value, dark, ...props }) => {
   const width = value * 100;
@@ -38,4 +39,4 @@ const cssModuleOptions = {
   allowMultiple: true,
 };
 
-export default cssModules(ProgressBar, styles, cssModuleOptions);
+module.exports = cssModules(ProgressBar, styles, cssModuleOptions);

@@ -1,7 +1,7 @@
-import React from 'react';
-import { configure } from '@kadira/storybook';
-import 'sanitize.css/sanitize.css';
-import '../css/custom-font-faces.css';
+const React = require('react');
+const { configure } = require('@kadira/storybook');
+require('sanitize.css/sanitize.css');
+require('../css/custom-font-faces.css');
 
 function loadStories() {
   require('./../stories');

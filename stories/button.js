@@ -1,6 +1,6 @@
-import React from 'react';
-import { storiesOf } from '@kadira/storybook';
-import Button from '../components/button';
+const React = require('react');
+const { storiesOf } = require('@kadira/storybook');
+const Button = require('../components/button');
 
 storiesOf('Button', module)
   .add('default', () => (

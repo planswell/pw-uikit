@@ -1,6 +1,6 @@
-import React from 'react';
-import { storiesOf } from '@kadira/storybook';
-import Tabs from '../components/tabs';
+const React = require('react');
+const { storiesOf } = require('@kadira/storybook');
+const Tabs = require('../components/tabs');
 
 storiesOf('Tabs', module)
   .add('tabs', () => <Tabs>

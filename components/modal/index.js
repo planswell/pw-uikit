@@ -1,9 +1,9 @@
-import React, { PropTypes } from 'react';
-import cssModules from 'react-css-modules';
-import styles from './style.css';
-
-import BaseModal from 'react-modal';
-import Icon from '../icon';
+const React = require('react');
+const { PropTypes } = React;
+const cssModules = require('react-css-modules');
+const styles = require('./style.css');
+const BaseModal = require('react-modal');
+const Icon = require('../icon');
 
 function Modal({ isOpen, onClose, children }) {
   return (
@@ -23,4 +23,4 @@ Modal.propTypes = {
   ]),
 };
 
-export default cssModules(Modal, styles);
+module.exports = cssModules(Modal, styles);

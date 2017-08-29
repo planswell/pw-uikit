@@ -1,6 +1,6 @@
-import React from 'react';
-import { storiesOf } from '@kadira/storybook';
-import Password from '../components/showable-password';
+const React = require('react');
+const { storiesOf } = require('@kadira/storybook');
+const Password = require('../components/showable-password');
 
 storiesOf('Password', module)
   .add('default', () => (

@@ -1,6 +1,6 @@
-import React from 'react';
-import { storiesOf } from '@kadira/storybook';
-import Input from '../components/input';
+const React = require('react');
+const { storiesOf } = require('@kadira/storybook');
+const Input = require('../components/input');
 
 const id = () => {};
 
